@@ -6,11 +6,11 @@ import CanvasLoader from '../Loader'
 const Computers = () => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
 
-  let y = window.innerWidth < 680 ? -2.2 : -3
+  let y = window.innerWidth < 680 ? -2.3 : -2.8
 
   return (
     <mesh>
-      <hemisphereLight intensity={1.8} groundColor='black' />
+      <hemisphereLight intensity={3} groundColor='black' />
       <pointLight intensity={2} />
       <primitive object={computer.scene} scale={0.75} 
       position={[0, y, -1.5]} 
