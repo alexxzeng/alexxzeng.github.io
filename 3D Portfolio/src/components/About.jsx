@@ -9,7 +9,7 @@ import me from '../assets/digital-me.png';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className='xs:w-[250px] w-full' >
+    <Tilt className='md:w-[250px] w-full' >
       <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
         <div options={{max: 45, scale: 1, speed: 450}}
@@ -27,14 +27,14 @@ const About = () => {
   return (
     <>
       <div className='flex items-start justify-around'>
-        <img src={me} alt="me" className='h-[700px] hidden 2xl:block'/>
+        <img src={me} alt="me" className='h-[700px] hidden mac:block big:mr-0 mac:mr-4'/>
         <div>
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Introduction</p>
             <h2 className={styles.sectionHeadText}>A Little About Me</h2>
           </motion.div>
           <motion.p variants={fadeIn("", "", 0.1, 1)}
-          className='mt-4 text-secondary sm:text-[17px] text-[14px] max-w-7xl sm:leading-[30px] leading-[26px]'>
+          className='mt-4 text-secondary sm:text-[17px] text-[14px] 2xl:max-w-7xl max-w-6xl sm:leading-[30px] leading-[26px]'>
             I'm currently a 3rd year student specializing in the <i><b>Software Engineering</b></i> stream 
             of <i><b>Computer Science</b></i> and minoring in <i><b>Statistics</b></i> at the <i><b>University of Toronto</b></i>.
             I am fortunate to have had many opportunities to develop and enhance the analytical and logical
@@ -47,7 +47,7 @@ const About = () => {
             with me through the <i><b>Contact</b></i> section of this portfolio!
           </motion.p>
 
-          <div className='mt-20 flex flex-wrap gap-10 sm:gap-0 justify-around'> 
+          <div className='mt-20 flex flex-wrap gap-10 md:gap-0 justify-around'> 
             {services.map((service, index) => (
               <ServiceCard key={service.title} index={index} {...service}/>
             ))}
