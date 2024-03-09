@@ -25,6 +25,8 @@ import {
   threejs,
 } from "../assets";
 
+import myImage from '../assets/portrait.jpeg'
+
 export const navLinks = [
   {
     id: "about",
@@ -42,19 +44,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Dean's List Scholar",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Agile Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full Stack Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Data Analyst",
     icon: creator,
   },
 ];

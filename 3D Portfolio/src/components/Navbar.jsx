@@ -19,7 +19,7 @@ const Navbar = () => {
           setActive('');
           window.scrollTo(0, 0)
         }}>
-          <img src={myImage} alt="logo" className='w-[100px] h-[100px] object-contain rounded-[35px] mr-3'/>
+          <img src={myImage} alt="logo" className='w-20 h-20 object-contain rounded-[25px] mr-3'/>
           <p className='text-white text-[18px] font-bold cursor-pointer'>Alex Zeng</p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -28,7 +28,8 @@ const Navbar = () => {
             hover:text-white text-[18px] font-medium cursor-pointer group`}
             onClick={() => setActive(link.title)}>
               <a href={`#${link.id}`}>{link.title}</a>
-              <div className='under w-0 h-1 violet-gradient group-hover:w-full transition-[3s]'/>
+              <div className={`${active === link.title ? 'w-full' : 'w-0'}
+                h-1 violet-gradient group-hover:w-full duration-500`}/>
             </li>
           ))}
         </ul>
