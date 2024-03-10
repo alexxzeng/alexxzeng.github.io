@@ -46,18 +46,22 @@ const services = [
   {
     title: "Dean's List Scholar",
     icon: web,
+    info: 'Working diligently with motivation and determination is the foundation of my academic success'
   },
   {
     title: "Agile Developer",
     icon: mobile,
+    info: 'Developed, tested, and deployed high fidelity prototypes, mobile apps, and web apps, under Scrum framework'
   },
   {
     title: "Full Stack Developer",
     icon: backend,
+    info: 'Engineered React-based clients to connect with Express and Django servers with MongoDB and SQL databases'
   },
   {
     title: "Data Analyst",
     icon: creator,
+    info: 'Utilized R & Python for data exploration, visualization, and machine learning from statistical coursework'
   },
 ];
 

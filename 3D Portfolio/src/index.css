@@ -114,6 +114,58 @@
   -webkit-text-fill-color: transparent;
 }
 
+.typer {
+  color: white;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+.typercur {
+  font-size: 16px;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 450) {
+  .typer {
+      font-size: 20px;
+  }
+
+  .typercur {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 640px) {
+  .typer {
+      font-size: 26px;
+  }
+
+  .typercur {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .typer {
+      font-size: 30px;
+      line-height: 40px;
+  }
+
+  .typercur {
+    font-size: 30px;
+  }
+}
+
+
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

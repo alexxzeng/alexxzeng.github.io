@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl
@@ -15,9 +17,18 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915eff]'>Alex!</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            A Software Engineering Student
-          </p>
+          <Typewriter
+            options={{
+              strings: ['A Software Engineering Student'],
+              autoStart: true,
+              loop: true,
+              wrapperClassName: 'typer',
+              cursorClassName: 'typercur',
+              delay: 35,
+              pauseFor: 4500,
+              deleteSpeed: 1
+            }}
+          />
         </div>
       </div>
       <ComputersCanvas />
