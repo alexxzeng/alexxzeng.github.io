@@ -18,14 +18,13 @@ import {
   meta,
   starbucks,
   tesla,
-  shopify,
+  uoft,
+  windermere,
   carrent,
   jobit,
   tripguide,
   threejs,
 } from "../assets";
-
-import myImage from '../assets/portrait.jpeg'
 
 export const navLinks = [
   {
@@ -120,13 +119,14 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const educations = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Honours Bachelor of Science",
+    school: "Univeristy of Toronto",
+    icon: uoft,
+    gpa: "3.78/4.0",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Sep 2021 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -135,37 +135,12 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "British Columbia Dogwood Diploma",
+    school: "Windermere Secondary School",
+    icon: windermere,
+    gpa: "4.0/4.0",
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2016 - Jun 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -268,4 +243,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, educations, testimonials, projects };
