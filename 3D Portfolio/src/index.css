@@ -127,6 +127,20 @@
   animation: blinker 1s linear infinite;
 }
 
+.date {
+  visibility: hidden;
+}
+
+@media (min-width: 1170px) {
+  .date {
+    visibility: visible;
+  }
+
+  .date2 {
+    display: none;
+  }
+}
+
 @keyframes blinker {
   50% {
     opacity: 0;
