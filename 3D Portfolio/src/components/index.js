@@ -7,6 +7,7 @@ import Education from './Education';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import ParticleBackground from './ParticleBackground';
 
 export {
   Hero,
@@ -20,5 +21,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  ParticleBackground
 }
