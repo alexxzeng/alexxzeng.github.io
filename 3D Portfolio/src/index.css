@@ -131,6 +131,11 @@
   visibility: hidden;
 }
 
+.stars {
+  position: absolute;
+  z-index: -1;
+}
+
 @media (min-width: 1170px) {
   .date {
     visibility: visible;
