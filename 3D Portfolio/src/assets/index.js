@@ -20,6 +20,11 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.png";
+import python from "./tech/python.png";
+import cpp from "./tech/c++.png";
+import postgres from "./tech/postgres.png";
+import django from "./tech/django.jpg";
 
 import meta from "./company/meta.png";
 import uoft from "./uoft.png";
@@ -63,4 +68,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  python,
+  java,
+  cpp,
+  postgres,
+  django,
 };
