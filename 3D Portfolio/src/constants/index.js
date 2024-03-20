@@ -122,10 +122,10 @@ const technologies = [
     name: "Three JS",
     icon: threejs,
   },
-  {
-    name: "Django",
-    icon: django,
-  },
+  // {
+  //   name: "Django",
+  //   icon: django,
+  // },
   {
     name: "docker",
     icon: docker,

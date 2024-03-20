@@ -50,6 +50,10 @@ const Works = () => {
           )
         })}
       </div>
+
+      <div className='flex items-center justify-center mt-16'>
+        <h2 className='text-secondary font-medium text-[40px]'>Coursework Honourable Mentions</h2>
+      </div>
     </>
   )
 }

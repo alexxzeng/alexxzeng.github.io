@@ -52,7 +52,10 @@ const ParticleBackground = () => {
           }
         },
         "opacity": {
-          "value": 0.6,
+          "value": {
+            "min": 0.3,
+            "max": 1
+          },
           "random": false,
           "anim": {
             "enable": true,
