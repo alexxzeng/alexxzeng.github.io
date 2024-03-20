@@ -27,7 +27,7 @@ const ParticleBackground = () => {
       fps_limit: 60,
       "particles": {
         "number": {
-          "value": 220,
+          "value": 250,
           "density": {
             "enable": true,
             "value_area": 1080
@@ -57,9 +57,9 @@ const ParticleBackground = () => {
             "max": 1
           },
           "random": false,
-          "anim": {
+          "animation": {
             "enable": true,
-            "speed": 2,
+            "speed": 0.5,
             "opacity_min": 0,
             "opacity_max": 1,   
             "sync": false
@@ -71,7 +71,7 @@ const ParticleBackground = () => {
             "max": 2
           },
           "random": true,
-          "anim": {
+          "animation": {
             "enable": true,
             "speed": 0.5, 
             "size_min": 0,
