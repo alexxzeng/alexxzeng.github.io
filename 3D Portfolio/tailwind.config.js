@@ -21,7 +21,7 @@ module.exports = {
         mac: '1340px',
         edu: '1170px',
         pro: '390px',
-        samsung: '413px',
+        samsung: '431px',
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",

@@ -25,18 +25,27 @@ const EducationCard = ({ education, num }) => (
           <div>GPA: {education.gpa}</div>
         </div>
         <div className="flex justify-between">
-          <h3 className='text-white xl:text-[24px] md:text-[22px] xs:text-[20px] pro:text-[14px] samsung:text-[15px] text-[13px] font-bold'>{education.school}</h3>
+          <h3 className='text-white xl:text-[24px] md:text-[22px] xs:text-[20px] pro:text-[14px] 
+          samsung:text-[15px] text-[13px] font-bold'>{education.school}</h3>
           <h3 className='hidden md:flex edu:hidden text-white text-[20px] font-bold'>{education.date}</h3>
         </div>
-        <div className='text-secondary edu:text-[15px] xl:text-[16px] 2xl:text-[17px] sm:text-[17px] xs:text-[16px] samsung:text-[14px] pro:text[13px] text-[12px] font-bold flex justify-between min'>
+        <div className='text-secondary edu:text-[15px] xl:text-[16px] 2xl:text-[17px] sm:text-[17px] xs:text-[16px] 
+        samsung:text-[14px] pro:text-[13px] text-[12px] xs:font-bold font-semibold flex justify-between mb-6'>
           <h5>{education.title}</h5>
           <h5 className="hidden md:flex">{education.gpa} GPA</h5>
         </div>
-        {education.points.map((point, index) => (
+
+        {education.specialist ? 
+        <div className="">{education.specialist} Specialist</div> 
+        : <></>}
+        {education.focus ? 
+        <div className="ml-6 text-secondary">{education.focus} Stream</div> 
+        : <></>}
+        {(education.points) ?
+          education.points.map((point, index) => (
           <div key={index}>
             <p>-{point}</p>
-          </div>
-        ))}
+          </div>)) : <></>}
       </div>
       
   </VerticalTimelineElement>)
