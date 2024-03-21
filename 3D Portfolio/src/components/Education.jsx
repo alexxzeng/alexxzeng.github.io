@@ -8,7 +8,7 @@ import { textVariant } from "../utils/motion";
 
 const EducationCard = ({ education, num }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#1d1836', color: '#FFF'}}
+    contentStyle={{ background: '#1d1836', color: '#FFF', }}
     contentArrowStyle={{ borderRight: '7px solid #232631'}}
     date={education.date}
     dateClassName="date"
@@ -20,13 +20,17 @@ const EducationCard = ({ education, num }) => (
     }>
 
       <div>
-        <div className="flex justify-between">
-          <h3 className='text-white xl:text-[24px] lg:text-[22px] text-[24px] font-bold'>{education.school}</h3>
-          <h3 className='date2 text-white text-[20px] font-bold'>{education.date}</h3>
+        <div className="flex md:hidden text-secondary pro:text-sm text-xs mb-2 justify-between">
+          <div>{education.date}</div>
+          <div>GPA: {education.gpa}</div>
         </div>
-        <div className='text-secondary 2xl:text-[18px] lg:text-[16px] text-[18px] font-bold flex justify-between min'>
+        <div className="flex justify-between">
+          <h3 className='text-white xl:text-[24px] md:text-[22px] xs:text-[20px] pro:text-[14px] samsung:text-[15px] text-[13px] font-bold'>{education.school}</h3>
+          <h3 className='hidden md:flex edu:hidden text-white text-[20px] font-bold'>{education.date}</h3>
+        </div>
+        <div className='text-secondary edu:text-[15px] xl:text-[16px] 2xl:text-[17px] sm:text-[17px] xs:text-[16px] samsung:text-[14px] pro:text[13px] text-[12px] font-bold flex justify-between min'>
           <h5>{education.title}</h5>
-          <h5>{education.gpa} GPA</h5>
+          <h5 className="hidden md:flex">{education.gpa} GPA</h5>
         </div>
         {education.points.map((point, index) => (
           <div key={index}>

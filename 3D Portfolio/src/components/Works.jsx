@@ -38,7 +38,7 @@ const Works = () => {
             <b><i>React, Three.js,</i></b> and <b><i>Tailwind</i></b>, to build this new version of my portfolio website! Check
             out this&nbsp;
             <a href="https://alex-zeng-uoft.github.io/Portfolio-Website/" 
-              className='font-semibold hover:underline' target='blank'>old version</a>
+              className='font-semibold hover:underline text-white-100' target='blank'>old version</a>
             &nbsp;of my website I built using pure HTML, CSS, and JavaScript less than a year apart.
         </motion.p>
       </div>

@@ -89,13 +89,14 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea rows='6' name="message" value={form.message} required
-            onChange={handleChange} placeholder="Finally, Your Epic Message To Be Delivered?"
+            onChange={handleChange} placeholder="Finally, Your Epic Message To Be Delivered"
             className="bg-tertiary py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outlined-none border-none font-medium"/>
           </label>
+
+          <p className={`${colour == 'r' ? "text-red-700" : 'text-green-700'} text-[14px] h-[14px] mt-[-16px] mb-[-16px] flex justify-center`}>{feedback}</p>
           
           <div className="flex justify-center">
-            <p className={`${colour == 'r' ? "text-red-700" : 'text-green-700'} absolute top-[650px] text-[14px]`}>{feedback}</p>
             <button type='submit' className={`p-4 pl-6 pr-6 bg-secondary text-tertiary
             font-bold w-fit rounded-xl ${isSubmitted ? '' : 'hover:bg-tertiary hover:text-secondary'} shadow-md
             shadow-primary`} disabled={isSubmitted}>
