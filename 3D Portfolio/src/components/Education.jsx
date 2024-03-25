@@ -36,16 +36,20 @@ const EducationCard = ({ education, num }) => (
         </div>
 
         {education.specialist ? 
-        <div className="">{education.specialist} Specialist</div> 
+        <div className="font-semibold">{education.specialist} Specialist &nbsp; | &nbsp; {education.minor} Minor</div> 
         : <></>}
         {education.focus ? 
-        <div className="ml-6 text-secondary">{education.focus} Stream</div> 
+        <div className="ml-6 mb-6 text-secondary">• {education.focus} Stream</div> 
         : <></>}
-        {(education.points) ?
-          education.points.map((point, index) => (
-          <div key={index}>
-            <p>-{point}</p>
-          </div>)) : <></>}
+        {(education.awards) ?
+          <div className="flex flex-col gap-0">
+            <span className="text-white font-semibold">Awards:</span>
+            {education.awards.map((award, index) => (
+            <div key={index} className='ml-6'>
+              <span className="text-secondary text-[15px] m-0">• {award}</span> 
+            </div>))}
+          </div>
+          : <></>}
       </div>
       
   </VerticalTimelineElement>)

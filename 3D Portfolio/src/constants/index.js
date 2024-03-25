@@ -142,7 +142,11 @@ const educations = [
     date: "Sep 2021 - Present",
     specialist: "Computer Science",
     focus: "Software Engineering",
-    minor: "Computer Science",
+    minor: "Statistics",
+    awards: [
+      "Dean's List Scholar (2022, 2023)",
+      "University of Toronto Entrance Scholarship (2021)",
+    ]
   },
   {
     title: "British Columbia Dogwood Diploma",
@@ -151,12 +155,10 @@ const educations = [
     gpa: "4.0/4.0",
     iconBg: "#E6DEDD",
     date: "Sep 2016 - Jun 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    awards: [
+      "Honour Roll (2017 - 2021)",
+      "The Bennie Ma Scholarship (2021)",
+    ]
   },
 ];
 
