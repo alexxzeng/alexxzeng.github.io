@@ -20,7 +20,11 @@ const Navbar = () => {
           window.scrollTo(0, 0)
         }}>
           <img src={myImage} alt="logo" className='w-[72px] h-[72px] object-contain rounded-[25px] mr-3'/>
-          <p className='text-white text-[18px] font-bold cursor-pointer'>Alex Zeng</p>
+          <p className='text-white text-[22px] font-bold cursor-pointer'>
+            <span className='text-[#915eff]'>&lt;</span>Alex<span className='text-[#915eff]'>&gt;&lt;</span>
+            <span className='text-[16px] text-[#915eff]'>/</span>
+            Zeng<span className='text-[#915eff]'>&gt;</span>
+            </p>
         </Link>
         <ul className='list-none hidden md:flex flex-row gap-10 items-center'>
           {navLinks.map((link) => (

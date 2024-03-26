@@ -10,7 +10,7 @@ const Tech = () => {
     <>
       <motion.div variants={textVariant()} className="ml-[3vw]">
         <p className={styles.sectionSubText}>Some Cool Things I Know</p>
-        <h2 className={styles.sectionHeadText}>Technical Skills</h2>
+        <h2 className={styles.sectionHeadText}><span className="text-[#915eff]">$ ls</span> Technical Skills</h2>
       </motion.div>
 
       <div className="flex flex-col justify-center items-center mt-16">
