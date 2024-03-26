@@ -2,12 +2,17 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
 import Typewriter from 'typewriter-effect';
+import myImage from '../assets/me.png'
+import { Tilt } from 'react-tilt';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 const Hero = () => {
 
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl
+      <div className={`${styles.paddingX} absolute inset-0 top-[92px] max-w-7xl
       mx-auto flex flex-row items-start gap-5 mt-4`}>
         <div className='flex flex-col justif-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
@@ -30,6 +35,27 @@ const Hero = () => {
             }}
           />
         </div>
+
+        <div className='hero:flex gap-10 z-10 edu:ml-[9vw] hidden ml-[2vw]'>
+          <div className='flex flex-col py-5 justify-around text-secondary font-bold'>
+              <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-white' target='_blank'>
+                <FontAwesomeIcon icon={faSquareGithub} /> &nbsp;GitHub
+              </a>
+              <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-white' target='_blank'>
+                <FontAwesomeIcon icon={faLinkedin} /> &nbsp;LinkedIn
+              </a>
+              
+              <a href="https://docs.google.com/document/d/1-GsOIfhcDDiW1-UsRlMcH7_EOGlJwW5SukLMsRB25rM/edit?usp=sharing" 
+              className='hover:text-white' target='_blank'>
+                <FontAwesomeIcon icon={faFile} /> &nbsp;Resume
+              </a>
+              
+          </div>
+          <Tilt className='z-10 green-pink-gradient rounded-full p-[3px] w-[206px] h-[206]'>
+            <img src={myImage} alt="logo" className='w-[200] h-[200] object-contain rounded-full mr-3'/>
+          </Tilt>
+        </div>
+        
       </div>
       <ComputersCanvas />
 

@@ -59,7 +59,7 @@ const ParticleBackground = () => {
           "random": false,
           "animation": {
             "enable": true,
-            "speed": 0.5,
+            "speed": 0.7,
             "opacity_min": 0,
             "opacity_max": 1,   
             "sync": false
@@ -73,7 +73,7 @@ const ParticleBackground = () => {
           "random": true,
           "animation": {
             "enable": true,
-            "speed": 0.5, 
+            "speed": 0.7, 
             "size_min": 0,
             "sync": false
           }
@@ -87,7 +87,7 @@ const ParticleBackground = () => {
         },
         "move": {
           "enable": true,
-          "speed": 0.3,
+          "speed": 0.5,
           "direction": "none",
           "random": true,
           "straight": false,
@@ -121,7 +121,7 @@ const ParticleBackground = () => {
             }
           },
           "bubble": {
-            "distance": 83.91608391608392,
+            "distance": 84,
             "size": 1,
             "duration": 3,
             "opacity": 1,

@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`${styles.paddingX} w-full items-end py-5 
+    <nav className={`${styles.paddingX} w-full items-end py-4 
     fixed top-0 z-20 bg-primary`}>
       <div className='w-full flex justify-between items-center mx-auto'>
         <Link to='/New-Portfolio' className='flex items-center gap-2' 
@@ -19,7 +19,7 @@ const Navbar = () => {
           setActive('');
           window.scrollTo(0, 0)
         }}>
-          <img src={myImage} alt="logo" className='w-20 h-20 object-contain rounded-[25px] mr-3'/>
+          <img src={myImage} alt="logo" className='w-[72px] h-[72px] object-contain rounded-[25px] mr-3'/>
           <p className='text-white text-[18px] font-bold cursor-pointer'>Alex Zeng</p>
         </Link>
         <ul className='list-none hidden md:flex flex-row gap-10 items-center'>
