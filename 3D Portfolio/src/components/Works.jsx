@@ -25,7 +25,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()} className="ml-[3vw]">
         <p className={styles.sectionSubText}>Some Awesome Things I Built</p>
-        <p className={styles.sectionHeadText}>Notable Projects</p>
+        <p className={styles.sectionHeadText}><span className="text-[#915eff]">$ cd</span> &nbsp;Notable Projects</p>
       </motion.div>
 
       <div className='w-full flex justify-center'>
