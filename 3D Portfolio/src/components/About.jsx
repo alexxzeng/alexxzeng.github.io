@@ -12,28 +12,30 @@ const ServiceCard = ({ index, title, icon, info }) => {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
-    <Tilt className='2xl:w-[250px] xs:w-[230px] w-[90%]' >
-      <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
-        <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
-          <div className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
-            options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}>
-            <div className='bg-tertiary rounded-[20px] py-5 px-12 2xl:min-h-[260px] min-h-[240px] flex 
-              justify-evenly items-center flex-col'>
-                <img src={icon} alt={title} className='w-16 h-16 object-contain' />
-                <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+    <div className='flex xl:w-fit md:w-[40%] w-fit items-center justify-center md:p-5 xl:p-0 p-0'>
+      <Tilt className='2xl:w-[250px] xs:w-[230px] w-[90%] lg:w-[300px] xl:w-[230px]' >
+        <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
+          <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
+            <div className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
+              options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}>
+              <div className='bg-tertiary rounded-[20px] py-5 px-12 2xl:min-h-[260px] min-h-[240px] flex 
+                justify-evenly items-center flex-col'>
+                  <img src={icon} alt={title} className='w-16 h-16 object-contain' />
+                  <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+              </div>
             </div>
-          </div>
 
-          <div className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
-            options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}>
-            <div className='bg-tertiary rounded-[20px] py-5 px-8 2xl:min-h-[260px] min-h-[240px] flex 
-              justify-evenly items-center flex-col'>
-              <h3 className='text-secondary text-[16px] font-normal text-center leading-7'>{info}</h3>
+            <div className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
+              options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}>
+              <div className='bg-tertiary rounded-[20px] py-5 px-8 2xl:min-h-[260px] min-h-[240px] flex 
+                justify-evenly items-center flex-col'>
+                <h3 className='text-secondary text-[16px] font-normal text-center leading-7'>{info}</h3>
+              </div>
             </div>
-          </div>
-        </ReactCardFlip> 
-      </motion.div>
-    </Tilt>
+          </ReactCardFlip> 
+        </motion.div>
+      </Tilt>
+    </div>
   )
 }
 

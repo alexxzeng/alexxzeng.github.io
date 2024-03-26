@@ -41,7 +41,7 @@ const Hero = () => {
               <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-white' target='_blank'>
                 <FontAwesomeIcon icon={faSquareGithub} /> &nbsp;GitHub
               </a>
-              <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-white' target='_blank'>
+              <a href='https://www.linkedin.com/in/alex-zeng-uoft/' className='hover:text-white' target='_blank'>
                 <FontAwesomeIcon icon={faLinkedin} /> &nbsp;LinkedIn
               </a>
               
@@ -51,7 +51,7 @@ const Hero = () => {
               </a>
               
           </div>
-          <Tilt className='z-10 green-pink-gradient rounded-full p-[3px] w-[206px] h-[206]'>
+          <Tilt className='z-10 green-pink-gradient rounded-full p-[3px] w-[206px] h-[206] shadow-2xl shadow-purple-800'>
             <img src={myImage} alt="logo" className='w-[200] h-[200] object-contain rounded-full mr-3'/>
           </Tilt>
         </div>

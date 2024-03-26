@@ -4,6 +4,8 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { menu, close } from '../assets';
 import myImage from '../assets/portrait.jpeg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
 const Navbar = () => {
@@ -36,6 +38,15 @@ const Navbar = () => {
                 h-1 violet-gradient group-hover:w-[110%] duration-[600ms]`}/>
             </li>
           ))}
+          <li className='flex gap-4'>
+              <a href='https://github.com/Alex-Zeng-UofT' className='text-secondary text-[30px] hover:text-white' target='_blank'>
+                <FontAwesomeIcon icon={faSquareGithub} />
+              </a>
+              <a href='https://www.linkedin.com/in/alex-zeng-uoft/' className='text-secondary text-[30px] hover:text-white' target='_blank'>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              
+          </li>
           <li>
             <a href='https://docs.google.com/document/d/1-GsOIfhcDDiW1-UsRlMcH7_EOGlJwW5SukLMsRB25rM/edit?usp=sharing'
               className='bg-secondary text-primary text-[19px] font-semibold p-2.5 rounded-lg pl-4 pr-4 
