@@ -12,7 +12,7 @@ const ServiceCard = ({ index, title, icon, info }) => {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
-    <div className='flex xl:w-fit md:w-[40%] w-fit items-center justify-center md:p-5 xl:p-0 p-0'>
+    <div className='flex xl:w-fit md:w-[40%] w-full items-center justify-center md:p-5 xl:p-0 p-0'>
       <Tilt className='2xl:w-[250px] xs:w-[230px] w-[90%] lg:w-[300px] xl:w-[230px]' >
         <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
           <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
