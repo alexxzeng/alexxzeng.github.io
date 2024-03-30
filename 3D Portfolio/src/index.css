@@ -144,6 +144,18 @@
   text-shadow: 0 0 2px #915eff, 0 0 5px #6b21a8;
 }
 
+@media (min-height: 640px) {
+  .warning {
+    display: none;
+  }
+}
+
+@media (min-height: 530px) {
+  .toggle {
+    display: flex;
+  }
+}
+
 @media (min-width: 1170px) {
   .date {
     visibility: visible;

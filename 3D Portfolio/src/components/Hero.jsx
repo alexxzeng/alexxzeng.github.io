@@ -57,13 +57,15 @@ const Hero = () => {
         </div>
         
       </div>
+      
+      <div className='absolute top-[350px] text-center w-full text-xl font-bold warning glow-text'>For Better Experiences, Please Allow Fullscreen</div>
 
      
       <ComputersCanvas />
       
       
 
-      <div className='absolute xs:bottom-6 bottom-20 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-6 bottom-20 w-full justify-center items-center hidden toggle'>
         <a href="#about" className='z-10 items-center flex flex-col'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex
           justify-center items-start p-2'>
