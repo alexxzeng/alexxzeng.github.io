@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915eff]'>Alex!</span>
+            Hi, I'm <span className='text-[#915eff] glow-text'>Alex!</span>
           </h1>
           <Typewriter
             options={{
@@ -38,15 +38,15 @@ const Hero = () => {
 
         <div className='hero:flex gap-10 z-10 edu:ml-[9vw] hidden ml-[2vw]'>
           <div className='flex flex-col py-5 justify-around text-secondary font-bold'>
-              <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-white' target='_blank'>
+              <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-white glow-text-thin' target='_blank'>
                 <FontAwesomeIcon icon={faSquareGithub} /> &nbsp;GitHub
               </a>
-              <a href='https://www.linkedin.com/in/alex-zeng-uoft/' className='hover:text-white' target='_blank'>
+              <a href='https://www.linkedin.com/in/alex-zeng-uoft/' className='hover:text-white glow-text-thin' target='_blank'>
                 <FontAwesomeIcon icon={faLinkedin} /> &nbsp;LinkedIn
               </a>
               
               <a href="https://docs.google.com/document/d/1-GsOIfhcDDiW1-UsRlMcH7_EOGlJwW5SukLMsRB25rM/edit?usp=sharing" 
-              className='hover:text-white' target='_blank'>
+              className='hover:text-white glow-text-thin' target='_blank'>
                 <FontAwesomeIcon icon={faFile} /> &nbsp;Resume
               </a>
               
@@ -57,7 +57,11 @@ const Hero = () => {
         </div>
         
       </div>
+
+     
       <ComputersCanvas />
+      
+      
 
       <div className='absolute xs:bottom-6 bottom-20 w-full flex justify-center items-center'>
         <a href="#about" className='z-10 items-center flex flex-col'>

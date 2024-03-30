@@ -136,6 +136,14 @@
   z-index: -1;
 }
 
+.glow-text {
+  text-shadow: 0 0 2px #915eff, 0 0 13px #6b21a8;
+}
+
+.glow-text-thin {
+  text-shadow: 0 0 2px #915eff, 0 0 5px #6b21a8;
+}
+
 @media (min-width: 1170px) {
   .date {
     visibility: visible;
