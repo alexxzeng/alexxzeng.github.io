@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
   return (
-    <div className="h-[80px] bg-black-100 z-10 mt-32 flex justify-center items-center">
+    <div className="sm:h-[80px] h-[130px] bg-black-100 z-10 mt-32 flex justify-center items-center">
         
-        <div className='flex gap-8 text-secondary items-center'>
+        <div className='flex-col sm:gap-8 gap-1 text-secondary items-center flex justify-center sm:flex-row'>
             <div><FontAwesomeIcon icon={faPhone}/> &nbsp;(604) 368-9308</div>
             <div><FontAwesomeIcon icon={faEnvelope}/> &nbsp;a.zeng@mail.utoronto.ca</div>
             <div className='flex gap-3 text-[30px]'>
