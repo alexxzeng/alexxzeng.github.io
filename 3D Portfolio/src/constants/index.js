@@ -196,15 +196,15 @@ const projects = [
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "react",
+        name: "android",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "java",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
@@ -217,15 +217,15 @@ const projects = [
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "numpy",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "scipy",
         color: "pink-text-gradient",
       },
     ],
@@ -238,16 +238,12 @@ const projects = [
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "assembly",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "figma",
         color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
       },
     ],
     image: game,

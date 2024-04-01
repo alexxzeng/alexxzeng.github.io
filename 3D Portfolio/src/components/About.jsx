@@ -16,8 +16,9 @@ const ServiceCard = ({ index, title, icon, info }) => {
       <Tilt className='2xl:w-[250px] xs:w-[230px] w-[90%] lg:w-[300px] xl:w-[230px]' >
         <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
           <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
-            <div className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
-              options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}>
+            <div className='w-full green-pink-gradient p-[1px] rounded-[20px] cursor-pointer'
+              options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}
+              style={{ boxShadow: '0px 9px 30px #6b21a8' }}>
               <div className='bg-tertiary rounded-[20px] py-5 px-12 2xl:min-h-[260px] min-h-[240px] flex 
                 justify-evenly items-center flex-col'>
                   <img src={icon} alt={title} className='w-16 h-16 object-contain' />
@@ -25,8 +26,9 @@ const ServiceCard = ({ index, title, icon, info }) => {
               </div>
             </div>
 
-            <div className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card cursor-pointer'
-              options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}>
+            <div className='w-full green-pink-gradient p-[1px] rounded-[20px] cursor-pointer'
+              options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}
+              style={{ boxShadow: '0px 9px 30px #6b21a8' }}>
               <div className='bg-tertiary rounded-[20px] py-5 px-8 2xl:min-h-[260px] min-h-[240px] flex 
                 justify-evenly items-center flex-col'>
                 <h3 className='text-secondary text-[16px] font-normal text-center leading-7'>{info}</h3>

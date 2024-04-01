@@ -10,20 +10,30 @@ import { Tilt } from 'react-tilt'
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)} className='flex justify-center items-center'>
-      <div className='green-pink-gradient p-[1px] sm:w-fit rounded-2xl' >
-        <div className='relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 px-10 rounded-2xl shadow-xl shadow-purple-800 shadow-of flex
-            flex-col items-center gap-2'>
-            <h1 className='font-semibold text-lg'>{name}</h1>
-            <div className='aspect-w-2 aspect-h-1'>
-              <img src={image} alt={name} className='max-h-[200px] max-w-[400px]  rounded-md'/>
-            </div>
-            
-            <p className='text-secondary ml-2'>description</p>
+    <Tilt>
+      <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)} className='flex justify-center items-center'>
+        <div className='green-pink-gradient p-[1px] sm:w-fit rounded-2xl' >
+          <div className='relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 px-10 rounded-2xl shadow-xl shadow-purple-800 flex
+              flex-col items-center gap-2'>
+              <h1 className='font-semibold text-lg'>{name}</h1>
+              <div className='aspect-w-2 aspect-h-1'>
+                <img src={image} alt={name} className='max-h-[200px] max-w-[400px]  rounded-md'/>
+              </div>
+              <p className='text-secondary ml-2'>description</p>
+              <div className='mt-4 flex flex-wrap gap-2'>
+                {tags.map((tag) => {
+                  return (
+                    <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+                      #{tag.name}
+                    </p>
+                  )
+                })}
+              </div>
+          </div>
         </div>
-      </div>
-      
-    </motion.div>
+        
+      </motion.div>
+    </Tilt>
   )
 }
 
