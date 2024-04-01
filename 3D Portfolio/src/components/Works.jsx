@@ -10,10 +10,17 @@ import { Tilt } from 'react-tilt'
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)}>
-      
-      <div className='relative w-full h-[230px] bg-tertiary p-5 rounded-2xl sm:w-[360px]'>
-
+    <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)} className='flex justify-center items-center'>
+      <div className='green-pink-gradient p-[1px] sm:w-fit rounded-2xl' >
+        <div className='relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 px-10 rounded-2xl shadow-xl shadow-purple-800 shadow-of flex
+            flex-col items-center gap-2'>
+            <h1 className='font-semibold text-lg'>{name}</h1>
+            <div className='aspect-w-2 aspect-h-1'>
+              <img src={image} alt={name} className='max-h-[200px] max-w-[400px]  rounded-md'/>
+            </div>
+            
+            <p className='text-secondary ml-2'>description</p>
+        </div>
       </div>
       
     </motion.div>
@@ -43,13 +50,16 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-16 flex flex-wrap gap-7 justify-center'>
-        {projects.map((project, index) => {
-          return (
-            <ProjectCard key={`project-${index}`} index={index} {...project}/>
-          )
-        })}
+      <div className='flex justify-center items-center'>
+        <div className='mt-16 grid lg:grid-cols-2 lg:grid-rows-2 grid-col-1 gap-11 justify-center px-6 max-w-5xl'>
+          {projects.map((project, index) => {
+            return (
+              <ProjectCard key={`project-${index}`} index={index} {...project}/>
+            )
+          })}
+        </div>
       </div>
+      
 
       <div className='flex items-center justify-center mt-16'>
         <h2 className='text-secondary font-medium text-[40px]'>Coursework Honourable Mentions</h2>

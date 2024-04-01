@@ -36,6 +36,10 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import grantors from "./grantors.png";
+import imageCompressor from "./imageCompressor.png";
+import planner from "./planner.png";
+import game from "./game.png";
 
 export {
   logo,
@@ -73,4 +77,8 @@ export {
   cpp,
   postgres,
   django,
+  grantors,
+  imageCompressor,
+  planner,
+  game,
 };
