@@ -172,7 +172,7 @@ const projects = [
   {
     name: "Grantors",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An accessible MERN web application for grant providers to post grants and review applications, users to apply for grants, and system admins to monitor activity and view statistics",
     tags: [
       {
         name: "react",
@@ -193,7 +193,7 @@ const projects = [
   {
     name: "Course Manager & Planner",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An Andriod mobile app for students to manage courses and plan future semesters using a course timeline generating algorithm, and admins to perform CRUD operations for courses",
     tags: [
       {
         name: "android",
@@ -214,19 +214,15 @@ const projects = [
   {
     name: "Image Compressor & Restorer",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A tool to process images with options to compress file size using K-means clustering on pixel RGBs and restore corrupted pixels using radial basis regression written in Python",
     tags: [
       {
         name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "numpy",
+        name: "machine-learning",
         color: "green-text-gradient",
-      },
-      {
-        name: "scipy",
-        color: "pink-text-gradient",
       },
     ],
     image: imageCompressor,
@@ -235,16 +231,20 @@ const projects = [
   {
     name: "Breaking Bad Game",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A retro-vibe platform game based off of Emmy-winning show Breaking Bad, featuring the one and only Heisenberg, written completely in Assembly under the MIPS 32-bit architecture",
     tags: [
       {
         name: "assembly",
         color: "blue-text-gradient",
       },
       {
-        name: "figma",
+        name: "MIPS",
         color: "green-text-gradient",
       },
+      {
+        name: "figma",
+        color: "pink-text-gradient",
+      }
     ],
     image: game,
     source_code_link: "https://github.com/",

@@ -15,11 +15,11 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         <div className='green-pink-gradient p-[1px] sm:w-fit rounded-2xl' >
           <div className='relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 px-10 rounded-2xl shadow-xl shadow-purple-800 flex
               flex-col items-center gap-2'>
-              <h1 className='font-semibold text-lg'>{name}</h1>
+              <h1 className='font-semibold text-lg mb-1'>{name}</h1>
               <div className='aspect-w-2 aspect-h-1'>
                 <img src={image} alt={name} className='max-h-[200px] max-w-[400px]  rounded-md'/>
               </div>
-              <p className='text-secondary ml-2'>description</p>
+              <p className='text-secondary ml-2 mt-2'>{description}</p>
               <div className='mt-4 flex flex-wrap gap-2'>
                 {tags.map((tag) => {
                   return (
@@ -46,7 +46,7 @@ const Works = () => {
       </motion.div>
 
       <div className='w-full flex justify-center'>
-        <motion.p variants={fadeIn(", ", 0.1, 1)}
+        <motion.p variants={fadeIn(", ", 0.1, 0.8)}
           className='mt-10 text-secondary text-[17px] sm:max-w-4xl w-[80vw] leading-[30px]'>
             Here are some of my favourite cool projects I have worked on! I am constantly
             expanding my knowledge in the field of Software Engineering, which allows 
