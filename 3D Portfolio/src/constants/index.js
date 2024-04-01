@@ -150,6 +150,9 @@ const educations = [
     awards: [
       "Dean's List Scholar (2022, 2023)",
       "University of Toronto Entrance Scholarship (2021)",
+    ],
+    extracurriculars: [
+      "University of Toronto Artificial Intelligence"
     ]
   },
   {
@@ -163,6 +166,9 @@ const educations = [
       "Honour Roll (2017 - 2021)",
       "The Bennie Ma Scholarship (2021)",
       "CEMC Certificate of Distinction (2019)"
+    ],
+    extracurriculars: [
+      "Robotics Club"
     ]
   },
 ];

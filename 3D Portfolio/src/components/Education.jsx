@@ -50,6 +50,16 @@ const EducationCard = ({ education, num }) => (
             </div>))}
           </div>
           : <></>}
+
+        <div className="flex flex-col gap-0 mt-4">
+          <span className="text-white font-semibold">Extracurriculars:</span>
+          {education.extracurriculars.map((club, index) => {
+            return (
+            <div key={index} className='ml-6'>
+              <span className="text-secondary text-[15px] m-0">• {club}</span> 
+            </div>)
+          })}
+        </div>
       </div>
       
   </VerticalTimelineElement>)

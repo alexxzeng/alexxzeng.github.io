@@ -21,7 +21,7 @@ module.exports = {
         mac: '1340px',
         edu: '1170px',
         pro: '390px',
-        samsung: '431px',
+        samsung: '430px',
         hero: '1064px'
       },
       backgroundImage: {

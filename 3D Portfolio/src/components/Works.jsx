@@ -13,11 +13,11 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
     <Tilt>
       <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)} className='flex justify-center items-center'>
         <div className='green-pink-gradient p-[1px] sm:w-fit rounded-2xl' >
-          <div className='relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 px-10 rounded-2xl shadow-xl shadow-purple-800 flex
+          <div className='relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 sm:px-10 px-5 rounded-2xl shadow-xl shadow-purple-800 flex
               flex-col items-center gap-2'>
               <h1 className='font-semibold text-lg mb-1'>{name}</h1>
               <div className='aspect-w-2 aspect-h-1'>
-                <img src={image} alt={name} className='max-h-[200px] max-w-[400px]  rounded-md'/>
+                <img src={image} alt={name} className='sm:h-[200px] sm:w-[400px] samsung:h-[180px] samsung:w-[360px] h-[150px] w-[300px] rounded-md'/>
               </div>
               <p className='text-secondary ml-2 mt-2'>{description}</p>
               <div className='mt-4 flex flex-wrap gap-2'>
@@ -61,7 +61,7 @@ const Works = () => {
       </div>
 
       <div className='flex justify-center items-center'>
-        <div className='mt-16 grid lg:grid-cols-2 lg:grid-rows-2 grid-col-1 gap-11 justify-center px-6 max-w-5xl'>
+        <div className='mt-16 grid lg:grid-cols-2 lg:grid-rows-2 grid-col-1 gap-11 justify-center sm:px-6 max-w-5xl'>
           {projects.map((project, index) => {
             return (
               <ProjectCard key={`project-${index}`} index={index} {...project}/>
@@ -71,9 +71,9 @@ const Works = () => {
       </div>
       
 
-      <div className='flex items-center justify-center mt-16'>
+      {/* <div className='flex items-center justify-center mt-16'>
         <h2 className='text-secondary font-medium text-[40px]'>Coursework Honourable Mentions</h2>
-      </div>
+      </div> */}
     </>
   )
 }
