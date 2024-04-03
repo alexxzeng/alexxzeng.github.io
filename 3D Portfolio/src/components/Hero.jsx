@@ -45,7 +45,7 @@ const Hero = () => {
                 <FontAwesomeIcon icon={faLinkedin} /> &nbsp;LinkedIn
               </a>
               
-              <a href="https://docs.google.com/document/d/1-GsOIfhcDDiW1-UsRlMcH7_EOGlJwW5SukLMsRB25rM/edit?usp=sharing" 
+              <a href="https://docs.google.com/document/d/1SxR9lrCR-16yJE5j8v7vo2sNfX_L7hafrIV7JwDiWow/edit?usp=sharing" 
               className='hover:text-white glow-text-thin' target='_blank'>
                 <FontAwesomeIcon icon={faFile} /> &nbsp;Resume
               </a>

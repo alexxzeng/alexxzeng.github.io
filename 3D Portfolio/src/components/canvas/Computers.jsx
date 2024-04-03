@@ -26,7 +26,7 @@ const ComputersCanvas = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 500px)');
     const shortQuery = window.matchMedia('(max-height: 850px)');
-    const hideQuery = window.matchMedia('(max-height: 640px)');
+    const hideQuery = window.matchMedia('(max-height: 600px)');
 
     setIsMobile(mediaQuery.matches)
     setIsShort(shortQuery.matches)

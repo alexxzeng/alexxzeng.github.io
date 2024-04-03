@@ -48,7 +48,7 @@ const Navbar = () => {
               
           </li>
           <li>
-            <a href='https://docs.google.com/document/d/1-GsOIfhcDDiW1-UsRlMcH7_EOGlJwW5SukLMsRB25rM/edit?usp=sharing'
+            <a href='https://docs.google.com/document/d/1SxR9lrCR-16yJE5j8v7vo2sNfX_L7hafrIV7JwDiWow/edit?usp=sharing'
               className='bg-secondary text-primary text-[19px] font-semibold p-2.5 rounded-lg pl-4 pr-4 
               hover:bg-tertiary hover:text-secondary'
               target='_blank'>
