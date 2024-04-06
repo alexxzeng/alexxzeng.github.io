@@ -142,7 +142,7 @@ const educations = [
     school: "Univeristy of Toronto",
     icon: uoft,
     gpa: "3.78/4.0",
-    iconBg: "#383E56",
+    iconBg: "#a0a6c3",
     date: "Sep 2021 - Present",
     specialist: "Computer Science",
     focus: "Software Engineering",
@@ -160,7 +160,7 @@ const educations = [
     school: "Windermere Secondary School",
     icon: windermere,
     gpa: "4.0/4.0",
-    iconBg: "#E6DEDD",
+    iconBg: "#afb6c3",
     date: "Sep 2016 - Jun 2021",
     awards: [
       "Honour Roll (2017 - 2021)",
@@ -260,7 +260,8 @@ const projects = [
 const coursework = [
   {
     title: "Computer and Network Security",
-    points: []
+    points: ["Scripted Encryption schemes, Hash Extension attacks, SSL Stripping, TLS Models, and Injection, with Python",
+            "Used Wireshark for packet sniffing and followed up with JavaScript for XSS and CSRF attacks"]
   },
   {
     title: "Software Tools and Systems Programming",

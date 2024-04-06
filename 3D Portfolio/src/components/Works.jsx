@@ -71,23 +71,25 @@ const Works = () => {
       </div>
       
 
-      <div className='flex items-center justify-center mt-16'>
+      <motion.div variants={fadeIn(", ", 3, 2)} className='flex items-center justify-center mt-16'>
         <div className='max-w-6xl w-[60rem]'>
-          <h2 className='text-secondary font-medium text-[40px]'>Coursework Honourable Mentions</h2>
+          <h2 className='text-secondary font-medium text-[40px] text-center'>Coursework Honourable Mentions</h2>
           <div className='mt-6 gap-5 flex flex-col'>
-            {coursework.map((cw => 
-              <div className='bg-tertiary p-2 px-4 rounded-xl'>
-                <h1 className='font-semibold text-xl mb-3'>{cw.title}</h1>
+            {coursework.map(((cw, index) => 
+              <div className='bg-tertiary p-2 px-4 rounded-xl border-[1px] border-[#6b21a8]' style={{boxShadow: '0px 5px 10px #6b21a8',}} key={index}>
+                <h1 className='font-semibold text-xl mb-2'>{cw.title}</h1>
                 <ul>
-                  <li>
-
-                  </li>
+                  {cw.points.map((point, index) => 
+                    <li className='text-secondary ml-6' key={index}>
+                      • {point}
+                    </li>
+                  )}
                 </ul>
               </div>
           ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
