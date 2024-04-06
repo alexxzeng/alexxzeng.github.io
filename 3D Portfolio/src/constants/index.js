@@ -257,4 +257,28 @@ const projects = [
   },
 ];
 
-export { services, technologies, educations, projects };
+const coursework = [
+  {
+    title: "Computer and Network Security",
+    points: []
+  },
+  {
+    title: "Software Tools and Systems Programming",
+    points: []
+  },
+  {
+    title: "Machine Learning and Data Mining",
+    points: []
+  },
+  
+  {
+    title: "Regression Analysis",
+    points: []
+  },
+  {
+    title: "Human-Computer Interaction",
+    points: []
+  },
+]
+
+export { services, technologies, educations, projects, coursework };

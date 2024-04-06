@@ -1,7 +1,7 @@
 import React from 'react'
 import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
-import { projects } from '../constants'
+import { projects, coursework } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { styles } from '../styles'
 import { motion } from 'framer-motion'
@@ -71,9 +71,23 @@ const Works = () => {
       </div>
       
 
-      {/* <div className='flex items-center justify-center mt-16'>
-        <h2 className='text-secondary font-medium text-[40px]'>Coursework Honourable Mentions</h2>
-      </div> */}
+      <div className='flex items-center justify-center mt-16'>
+        <div className='max-w-6xl w-[60rem]'>
+          <h2 className='text-secondary font-medium text-[40px]'>Coursework Honourable Mentions</h2>
+          <div className='mt-6 gap-5 flex flex-col'>
+            {coursework.map((cw => 
+              <div className='bg-tertiary p-2 px-4 rounded-xl'>
+                <h1 className='font-semibold text-xl mb-3'>{cw.title}</h1>
+                <ul>
+                  <li>
+
+                  </li>
+                </ul>
+              </div>
+          ))}
+          </div>
+        </div>
+      </div>
     </>
   )
 }

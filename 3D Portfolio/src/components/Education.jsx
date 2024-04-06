@@ -5,14 +5,17 @@ import { styles } from '../styles'
 import { educations } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { textVariant } from "../utils/motion";
+import 'react-vertical-timeline-component/style.min.css';
+
 
 const EducationCard = ({ education, num }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#1d1836', color: '#FFF', }}
-    contentArrowStyle={{ borderRight: '7px solid #232631'}}
+    contentStyle={{ background: '#1d1836', color: '#FFF', borderRadius: '10px', padding: '20px 30px', 
+                    boxShadow: '0px 5px 20px #6b21a8', border: '1px solid #6b21a8'}}
+    contentArrowStyle={{ borderRight: '7px solid #6b21a8'}}
     date={education.date}
     dateClassName="date"
-    iconStyle={{ background: education.iconBg}}
+    iconStyle={{ background: education.iconBg }}
     icon={
       <div className="flex justify-center items-center w-full h-full">
         <img src={education.icon} alt="" className={`${num == 1 ? 'mt-1' : 'mt-0'} w-[80%] h-[80%] object-contain`}/>
@@ -74,7 +77,7 @@ const Education = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
+        <VerticalTimeline lineColor="#232631">
           {educations.map((education, index) => (
             <EducationCard key={index} education={education} num={index}/>
           ))}
