@@ -260,25 +260,29 @@ const projects = [
 const coursework = [
   {
     title: "Computer and Network Security",
-    points: ["Scripted Encryption schemes, Hash Extension attacks, SSL Stripping, TLS Models, and Injection, with Python",
-            "Used Wireshark for packet sniffing and followed up with JavaScript for XSS and CSRF attacks"]
+    points: ["Scripted Encryption schemes, Hash Extension attacks, SSL Stripping, TLS Models, and Injection, for CTFs using Python",
+            "Used Wireshark for packet sniffing and followed up with JavaScript for XSS and CSRF attacks on vulnerablities"]
   },
   {
     title: "Software Tools and Systems Programming",
-    points: []
+    points: ["Utilized C in Linux to manipulate low-level concepts such as memory, file I/O, processes and its communication",
+            "Developed a file storage server that allows upload and download for clients using sockets and signals in C"]
   },
   {
     title: "Machine Learning and Data Mining",
-    points: []
+    points: ["Acquired skills in Regression, Clustering, Classification, Principle Component Analysis, and Support Vector Machines",
+            "Extended Python knowledge by using NumPy, Panadas, and Scikit-Learn to train and test machine learning models"]
   },
   
   {
     title: "Regression Analysis",
-    points: []
+    points: ["Practiced R to train linear models, visualize distributions, run diagnostics, and migitate with remdeial measures",
+            "Conducted case study on blood pressure with exploratory data analysis, model selection, and cross validation"]
   },
   {
     title: "Human-Computer Interaction",
-    points: []
+    points: ["Applied Nielsen's 8 Golden Rules to assess the usability of popular websites and proposed improvements in reports",
+            "Constructed a high fidelity mobile app prototype using Nielsen's 10 Heuristics and conducted contextual inquiries"]
   },
 ]
 
