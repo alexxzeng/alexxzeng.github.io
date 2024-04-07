@@ -149,7 +149,7 @@ const educations = [
     minor: "Statistics",
     awards: [
       "Dean's List Scholar (2022, 2023)",
-      "University of Toronto Entrance Scholarship (2021)",
+      "University of Toronto Entrance Scholarship",
     ],
     extracurriculars: [
       "University of Toronto Artificial Intelligence"

@@ -80,7 +80,7 @@ const Works = () => {
                style={{boxShadow: '0px 5px 10px #6b21a8',}} key={index}>
                 <div className='hover:border-[#6b21a8] border-[2px] border-transparent p-2 px-4 pb-4 rounded-lg'>
                    <h1 className='font-semibold text-xl mb-2'>{cw.title}</h1>
-                    <ul>
+                    <ul className='flex flex-col gap-3'>
                       {cw.points.map((point, index) => 
                         <li className='text-secondary ml-4' key={index}>
                           • {point}

@@ -10,11 +10,12 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const EducationCard = ({ education, num }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#1d1836', color: '#FFF', borderRadius: '10px', padding: '20px 30px', 
+    contentStyle={{ background: '#1d1836', color: '#FFF', borderRadius: '10px', padding: '20px 14px', 
                     boxShadow: '0px 5px 20px #6b21a8', border: '1px solid #6b21a8'}}
     contentArrowStyle={{ borderRight: '7px solid #6b21a8'}}
     date={education.date}
     dateClassName="date"
+    className="-mx-[14px] md:ml-0"
     iconStyle={{ background: education.iconBg }}
     icon={
       <div className="flex justify-center items-center w-full h-full">
@@ -39,27 +40,27 @@ const EducationCard = ({ education, num }) => (
         </div>
 
         {education.specialist ? 
-        <div className="font-semibold">{education.specialist} Specialist &nbsp; | &nbsp; {education.minor} Minor</div> 
+        <div className="font-semibold xs:text-[16px] text-[15px]">{education.specialist} Specialist &nbsp; | &nbsp; {education.minor} Minor</div> 
         : <></>}
         {education.focus ? 
-        <div className="ml-6 mb-6 text-secondary">• {education.focus} Stream</div> 
+        <div className="sm:ml-6 xs:ml-2 ml-1 xs:text-[15px] sm:text-[16px] text-[13px] mb-6 text-secondary">• {education.focus} Stream</div> 
         : <></>}
         {(education.awards) ?
           <div className="flex flex-col gap-0">
-            <span className="text-white font-semibold">Awards:</span>
+            <span className="text-white font-semibold xs:text-[16px] text-[15px]">Awards:</span>
             {education.awards.map((award, index) => (
-            <div key={index} className='ml-6'>
-              <span className="text-secondary text-[15px] m-0">• {award}</span> 
+            <div key={index}>
+              <span className="sm:ml-6 xs:ml-2 ml-1 xs:text-[14px] sm:text-[16px] text-[13px] mb-6 text-secondary">• {award}</span> 
             </div>))}
           </div>
           : <></>}
 
         <div className="flex flex-col gap-0 mt-4">
-          <span className="text-white font-semibold">Extracurriculars:</span>
+          <span className="text-white font-semibold xs:text-[16px] text-[15px]">Extracurriculars:</span>
           {education.extracurriculars.map((club, index) => {
             return (
-            <div key={index} className='ml-6'>
-              <span className="text-secondary text-[15px] m-0">• {club}</span> 
+            <div key={index}>
+              <span className="sm:ml-6 xs:ml-2 ml-1 xs:text-[14px] sm:text-[16px] text-[13px] mb-6 text-secondary">• {club}</span> 
             </div>)
           })}
         </div>
