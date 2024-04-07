@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Education, Feedbacks, Hero, 
-  Navbar, Tech, Works, ParticleBackground} from './components';
+  Navbar, Tech, Works, ParticleBackground, Coursework} from './components';
 
 import Footer from "./components/Footer";
 
@@ -21,6 +21,7 @@ const App = () => {
         <Tech />
         <Education />
         <Works />
+        <Coursework/>
         <Contact />
         <Footer/>
       </div>

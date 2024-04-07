@@ -8,6 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import ParticleBackground from './ParticleBackground';
+import Coursework from './Coursework';
 
 export {
   Hero,
@@ -22,5 +23,6 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  ParticleBackground
+  ParticleBackground,
+   Coursework
 }
