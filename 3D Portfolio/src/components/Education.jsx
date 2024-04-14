@@ -15,7 +15,7 @@ const EducationCard = ({ education, num }) => (
     contentArrowStyle={{ borderRight: '7px solid #6b21a8'}}
     date={education.date}
     dateClassName="date"
-    className="-mx-[14px] md:ml-0"
+    className="-mx-[14px] sm:-mx-0 "
     iconStyle={{ background: education.iconBg }}
     icon={
       <div className="flex justify-center items-center w-full h-full">

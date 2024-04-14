@@ -145,11 +145,16 @@
 }
 
 .vertical-timeline::before {
-  background-color: #3f2c76; 
+  background-color: #3f2c76;
+  margin-left: -14px;
 }
 
 .vertical-timeline-element-icon {
   box-shadow: 0 0 0 4px #3f2c76, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.box {
+  box-shadow: 0px 5px 20px #6b21a8;
 }
 
 @media (min-height: 600px) {
@@ -203,6 +208,10 @@
 
   .typercur {
     font-size: 26px;
+  }
+
+  .vertical-timeline::before {
+    margin-left: 0px;
   }
 }
 

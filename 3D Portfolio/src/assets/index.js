@@ -30,8 +30,8 @@ import meta from "./company/meta.png";
 import uoft from "./uoft.png";
 import windermere from "./windermere.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import ibm from "./company/ibm.png";
+import stanford from "./company/stanford.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -67,8 +67,6 @@ export {
   windermere,
   meta,
   shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
@@ -81,4 +79,6 @@ export {
   imageCompressor,
   planner,
   game,
+  ibm,
+  stanford,
 };

@@ -3,6 +3,7 @@ import { About, Contact, Education, Feedbacks, Hero,
   Navbar, Tech, Works, ParticleBackground, Coursework} from './components';
 
 import Footer from "./components/Footer";
+import Certificates from "./components/Certificates";
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
         </div>
         <Tech />
         <Education />
+        <Certificates />
         <Works />
         <Coursework/>
         <Contact />

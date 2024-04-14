@@ -46,7 +46,7 @@ const Works = () => {
       </motion.div>
 
       <div className='w-full flex justify-center'>
-        <motion.p variants={fadeIn(", ", 0, 0, 1)}
+        <motion.p variants={fadeIn(", ", 0, 0, 0.5)}
           className='mt-10 text-secondary text-[17px] sm:max-w-4xl w-[80vw] leading-[30px]'>
             Here are some of my favourite cool projects I have worked on! I am constantly
             expanding my knowledge in the field of Software Engineering, which allows 

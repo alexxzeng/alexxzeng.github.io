@@ -16,8 +16,6 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
   uoft,
   windermere,
   carrent,
@@ -33,6 +31,8 @@ import {
   imageCompressor,
   planner,
   game,
+  ibm,
+  stanford,
 } from "../assets";
 
 export const navLinks = [
@@ -199,7 +199,7 @@ const projects = [
   {
     name: "Course Manager & Planner",
     description:
-      "An Andriod mobile app for students to manage courses and plan future semesters using a course timeline generating algorithm, and admins to perform CRUD operations for courses",
+      "An Android mobile app for students to manage courses and plan future semesters using a course timeline generating algorithm, and admins to perform CRUD operations for courses",
     tags: [
       {
         name: "android",
@@ -286,4 +286,39 @@ const coursework = [
   },
 ]
 
-export { services, technologies, educations, projects, coursework };
+const certificates = [
+  {
+    name: "Machine Learning Specialization",
+    link: ibm,
+    company: "IBM",
+    image: ibm,
+    date: "Aug 2023",
+    description: "description",
+  },
+  {
+    name: "Algorithms Specialization",
+    link: ibm,
+    company: "Stanford University",
+    image: stanford,
+    date: "May 2023",
+    description: "description",
+  },
+  {
+    name: "Front-End Development",
+    link: ibm,
+    company: "Meta",
+    image: meta,
+    date: "Apr 2023",
+    description: "description",
+  },
+  {
+    name: "Back-End Development", 
+    link: ibm,
+    company: "Meta",
+    image: meta,
+    date: "Apr 2023",
+    description: "description",
+  }
+];
+
+export { services, technologies, educations, projects, coursework, certificates};
