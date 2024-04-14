@@ -289,35 +289,35 @@ const coursework = [
 const certificates = [
   {
     name: "Machine Learning Specialization",
-    link: ibm,
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/XGB3VVUWAK8E",
     company: "IBM",
     image: ibm,
     date: "Aug 2023",
-    description: "description",
+    description: "Applied techniques in Exploratory Data Analysis, Regression, Classification, Clustering, and Deep Learning using Python",
   },
   {
     name: "Algorithms Specialization",
-    link: ibm,
+    link: "https://coursera.org/account/accomplishments/specialization/certificate/Z6AESKBH8ZCW",
     company: "Stanford University",
     image: stanford,
     date: "May 2023",
-    description: "description",
+    description: "Dived into the algorithms of Divide and Conquer, Greedy, Dynamic Programming, and Minimum Spanning Trees, with in-depth analysis",
   },
   {
     name: "Front-End Development",
-    link: ibm,
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/T7KJ2DM6YXC8",
     company: "Meta",
     image: meta,
     date: "Apr 2023",
-    description: "description",
+    description: "Demonstrated acquired knowledge in HTML, Bootstrap with CSS, React with JavaScript, and UX/UI principles in a capstone project",
   },
   {
     name: "Back-End Development", 
-    link: ibm,
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/6LZ6NDFK5AME",
     company: "Meta",
     image: meta,
     date: "Apr 2023",
-    description: "description",
+    description: "Exhibited applications in Python specializing in the Django framework from building APIs that interact with a MySQL database",
   }
 ];
 
