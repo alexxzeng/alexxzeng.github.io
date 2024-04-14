@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const CertificateCard = ({certificate, index}) => {
     return (
         <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)} className='flex justify-center items-center'>
-            <Tilt className='border-[1px] border-[#6b21a8] rounded-2xl bg-badge-pattern bg-cover bg-no-repeat bg-center sm:w-[500px] sm:h-[300px] w-[300px] h-[180px] box'>
+            <Tilt className='border-[1px] border-[#6b21a8] rounded-2xl bg-badge-pattern bg-cover bg-no-repeat bg-center sm:w-[500px] sm:h-[300px] w-[320px] h-[200px] box'>
                 <div className='flex flex-col p-4'>
                     <div className='flex justify-between text-secondary text-[12px] sm:text-base items-center'>
                         <div className='flex gap-2 items-center'>
@@ -20,13 +20,13 @@ const CertificateCard = ({certificate, index}) => {
                         <div className='s,:mr-1'>{certificate.date}</div>
                     </div>
                     <div className='flex justify-between items-center'>
-                        <h1 className='font-semibold sm:text-lg sm:mt-2 mt-1 sm:ml-2 text-sm'>{certificate.name}</h1>
+                        <h1 className='font-semibold sm:text-lg mt-2 sm:ml-2 text-sm'>{certificate.name}</h1>
                         <a href={certificate.link} target='blank'
                         className='sm:h-7 sm:w-7 w-5 h-5 rounded-full bg-secondary items-center justify-center flex hover:bg-[#dad6f3] transition'>
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-[#151228] text-sm sm:text-base'/>
                         </a>
                     </div>
-                    <p className='text-secondary sm:mt-8 sm:ml-2 mt-1 w-[78%] text-[11px] sm:text-base'>{certificate.description}</p>
+                    <p className='text-secondary sm:mt-8 sm:ml-2 mt-4 w-[78%] text-[11px] sm:text-base'>{certificate.description}</p>
                 </div>
             </Tilt>
         </motion.div>
