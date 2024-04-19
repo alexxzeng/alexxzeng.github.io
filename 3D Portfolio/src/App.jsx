@@ -9,23 +9,25 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover 
-        bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+      <div className="relative z-0 bg-primary flex justify-center">
+        <div className="max-w-[1920px] w-full">
+          <div className="bg-hero-pattern bg-cover 
+          bg-no-repeat bg-center">
+            <Navbar />
+            <Hero />
+          </div>
+          <div>
+            <ParticleBackground />
+            <About />
+          </div>
+          <Tech />
+          <Education />
+          <Certificates />
+          <Works />
+          <Coursework/>
+          <Contact />
+          <Footer/>
         </div>
-        <div>
-          <ParticleBackground />
-          <About />
-        </div>
-        <Tech />
-        <Education />
-        <Certificates />
-        <Works />
-        <Coursework/>
-        <Contact />
-        <Footer/>
       </div>
     </BrowserRouter>
   )

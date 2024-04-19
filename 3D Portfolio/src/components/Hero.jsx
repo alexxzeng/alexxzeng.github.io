@@ -36,7 +36,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className='hero:flex gap-10 z-10 edu:ml-[9vw] hidden ml-[2vw]'>
+        <div className='hero:flex gap-10 z-10 edu:ml-[9vw] hidden ml-[2vw] xxl:ml-[173px]'>
           <div className='flex flex-col py-5 justify-around text-secondary font-bold'>
               <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-white glow-text-thin' target='_blank'>
                 <FontAwesomeIcon icon={faSquareGithub} /> &nbsp;GitHub
