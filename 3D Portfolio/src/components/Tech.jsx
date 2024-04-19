@@ -66,7 +66,7 @@ const Tech = () => {
             : categories[selector].map((selector) => (
               <div className="w-28 h-28" key={selector.name}>
                 <BallCanvas icon={selector.icon}></BallCanvas>
-                <div className="flex items-center justify-center text-secondary font-semibold text-[18px]">{selector.name}</div>
+                <div className="flex items-center justify-center text-center text-secondary font-semibold text-[18px]">{selector.name}</div>
               </div>
             ))}
           </div>

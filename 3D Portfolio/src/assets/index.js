@@ -16,15 +16,29 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import angular from "./tech/angular.png";
+import next from "./tech/next.png";
+import express from "./tech/express.png";
+import flask from "./tech/flask.png";
+import bootstrap from "./tech/bootstrap.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
+import pytorch from "./tech/pytorch.png";
+import tensorflow from "./tech/tensorflow.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png";
+import mysql from "./tech/mysql.png";
+import firebase from "./tech/firebase.png";
 import java from "./tech/java.png";
 import python from "./tech/python.png";
 import cpp from "./tech/c++.png";
+import c from "./tech/c.png";
+import r from "./tech/r.png";
+import asm from "./tech/asm.png";
 import postgres from "./tech/postgres.png";
 import django from "./tech/django.jpg";
+import android from "./tech/android.png";
 
 import meta from "./company/meta.png";
 import uoft from "./uoft.png";
@@ -51,6 +65,9 @@ export {
   menu,
   close,
   css,
+  c,
+  r,
+  asm,  
   docker,
   figma,
   git,
@@ -59,14 +76,24 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  angular,
+  next,
+  express,
+  flask,
+  bootstrap,
+  pytorch,
+  tensorflow,
   redux,
   tailwind,
   typescript,
   threejs,
+  aws,
+  firebase,
   uoft,
   windermere,
   meta,
   shopify,
+  mysql,
   carrent,
   jobit,
   tripguide,
@@ -74,6 +101,7 @@ export {
   java,
   cpp,
   postgres,
+  android,
   django,
   grantors,
   imageCompressor,

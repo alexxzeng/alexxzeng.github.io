@@ -22,7 +22,7 @@ const ParticleBackground = () => {
     () => ({
       backgroundMode: {
           enable: true,
-          zIndex: -1
+          zIndex: 5
       },
       fps_limit: 60,
       "particles": {

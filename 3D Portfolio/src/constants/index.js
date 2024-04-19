@@ -7,7 +7,11 @@ import {
   typescript,
   html,
   css,
+  c,
+  r,
+  asm,
   reactjs,
+  angular,
   redux,
   tailwind,
   nodejs,
@@ -33,6 +37,16 @@ import {
   game,
   ibm,
   stanford,
+  next,
+  express,
+  flask,
+  bootstrap,
+  pytorch,
+  tensorflow,
+  aws,
+  mysql,
+  firebase,
+  android
 } from "../assets";
 
 export const navLinks = [
@@ -96,7 +110,7 @@ const languages = [
   },
   {
     name: "C",
-    icon: java,
+    icon: c,
   },
   {
     name: "HTML",
@@ -108,11 +122,11 @@ const languages = [
   },
   {
     name: "R",
-    icon: java,
+    icon: r,
   },
   {
     name: "Assembly",
-    icon: cpp,
+    icon: asm,
   },
 ];
 
@@ -123,11 +137,23 @@ const frameworks = [
   },
   {
     name: "Angular",
-    icon: reactjs,
+    icon: angular,
   },
   {
     name: "Next.js",
-    icon: reactjs,
+    icon: next,
+  },
+  {
+    name: "Express",
+    icon: express,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "Flask",
+    icon: flask,
   },
   {
     name: "Tailwind",
@@ -135,50 +161,62 @@ const frameworks = [
   },
   {
     name: "Bootstrap",
-    icon: tailwind,
-  },
-  {
-    name: "Flask",
-    icon: nodejs,
-  },
-  {
-    name: "PyTorch",
-    icon: mongodb,
-  },
-  {
-    name: "TensorFlow",
-    icon: postgres,
+    icon: bootstrap,
   },
   {
     name: "Three.js",
     icon: threejs,
   },
   {
-    name: "Express",
-    icon: threejs,
+    name: "PyTorch",
+    icon: pytorch,
   },
   {
-    name: "Django",
-    icon: django,
+    name: "TensorFlow",
+    icon: tensorflow,
   },
 ];
 
 const tools = [
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "AWS",
+    icon: aws,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "MySQL",
+    icon: mysql,
   },
   {
     name: "PostgreSQL",
     icon: postgres,
   },
   {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "Android Studio",
+    icon: android,
+  },
+  {
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: "Git",
+    icon: git,
   },
 ]
 
