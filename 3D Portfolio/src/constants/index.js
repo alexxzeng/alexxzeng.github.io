@@ -73,19 +73,7 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: " Java",
-    icon: java,
-  },
-  {
-    name: " C++",
-    icon: cpp,
-  },
+const languages = [
   {
     name: "JavaScript",
     icon: javascript,
@@ -93,6 +81,22 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "C",
+    icon: java,
   },
   {
     name: "HTML",
@@ -103,11 +107,34 @@ const technologies = [
     icon: css,
   },
   {
-    name: "React JS",
+    name: "R",
+    icon: java,
+  },
+  {
+    name: "Assembly",
+    icon: cpp,
+  },
+];
+
+const frameworks = [
+  {
+    name: "React",
+    icon: reactjs,
+  },
+  {
+    name: "Angular",
+    icon: reactjs,
+  },
+  {
+    name: "Next.js",
     icon: reactjs,
   },
   {
     name: "Tailwind",
+    icon: tailwind,
+  },
+  {
+    name: "Bootstrap",
     icon: tailwind,
   },
   {
@@ -123,18 +150,37 @@ const technologies = [
     icon: postgres,
   },
   {
-    name: "Three JS",
+    name: "Three.js",
     icon: threejs,
   },
-  // {
-  //   name: "Django",
-  //   icon: django,
-  // },
+  {
+    name: "Express",
+    icon: threejs,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+];
+
+const tools = [
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgres,
+  },
   {
     name: "docker",
     icon: docker,
   },
-];
+]
 
 const educations = [
   {
@@ -321,4 +367,4 @@ const certificates = [
   }
 ];
 
-export { services, technologies, educations, projects, coursework, certificates};
+export { services, languages, educations, projects, coursework, certificates, frameworks, tools};
