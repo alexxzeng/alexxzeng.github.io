@@ -138,15 +138,15 @@ const frameworks = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "Flask",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "PyTorch",
     icon: mongodb,
   },
   {
-    name: "PostgreSQL",
+    name: "TensorFlow",
     icon: postgres,
   },
   {

@@ -30,25 +30,28 @@ const Tech = () => {
 
       <div className="flex flex-col justify-start items-center mt-16 min-h-[470px]">
         <h3 className="font-semibold text-secondary italic text-xl">"Learn continually. There’s always ‘one more thing’ to learn!" &nbsp; &nbsp;  - Steve Jobs</h3>
-        <div className="grid grid-cols-3 gap-20 mt-20 text-secondary text-xl font-semibold">
-            <button className={`${selector === 0 ? 'text-white font-bold' : 'hover:text-[#cdcdcd]'} flex flex-col 
+        <div className="flex text-base xs:text-lg sm:text-base gap-8 sm:gap-10 lg:gap-20 mt-20 text-secondary md:text-xl font-semibold items-center w-fulljustify-center">
+            <button className={`${selector === 0 ? 'text-white' : 'hover:text-[#cdcdcd]'} flex flex-col 
             justify-center items-center group gap-[2px] w-fit`} 
               onClick={() => {setSelector(0)}}>
-              Programming Languages
+              <h1 className="hidden lg:block">Programming Languages</h1>
+              <h1 className="block lg:hidden">Languages</h1>
               <div className={`${selector === 0 ? 'w-[105%]' : 'w-0'}
                 h-1 violet-gradient group-hover:w-[105%] duration-[600ms]`}/>
             </button>
-            <button className={`${selector === 1 ? 'text-white font-bold' : 'hover:text-[#cdcdcd]'} flex flex-col 
+            <button className={`${selector === 1 ? 'text-white' : 'hover:text-[#cdcdcd]'} flex flex-col 
             justify-center items-center group gap-[2px] w-fit`} 
               onClick={() => {setSelector(1);}}>
-              Libraries/Frameworks
+              <h1 className="hidden sm:block">Libraries/Frameworks</h1>
+              <h1 className="block sm:hidden">Frameworks</h1>
               <div className={`${selector === 1 ? 'w-[105%]' : 'w-0'}
                 h-1 violet-gradient group-hover:w-[105%] duration-[600ms]`}/>
             </button>
-            <button className={`${selector === 2 ? 'text-white font-bold' : 'hover:text-[#cdcdcd]'} flex flex-col 
+            <button className={`${selector === 2 ? 'text-white' : 'hover:text-[#cdcdcd]'} flex flex-col 
             justify-center items-center group gap-[2px] w-fit`} 
               onClick={() => setSelector(2)}>
-              Tools/Databases
+              <h1 className="hidden sm:block">Tools/Databases</h1>
+              <h1 className="block sm:hidden">Tools</h1>
               <div className={`${selector === 2 ? 'w-[105%]' : 'w-0'}
                 h-1 violet-gradient group-hover:w-[105%] duration-[600ms]`}/>
             </button>
