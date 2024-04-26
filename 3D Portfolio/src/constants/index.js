@@ -389,7 +389,7 @@ const certificates = [
   },
   {
     name: "Front-End Development",
-    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/T7KJ2DM6YXC8",
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/6LZ6NDFK5AME",
     company: "Meta",
     image: meta,
     date: "Apr 2023",
@@ -397,7 +397,7 @@ const certificates = [
   },
   {
     name: "Back-End Development", 
-    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/6LZ6NDFK5AME",
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/T7KJ2DM6YXC8",
     company: "Meta",
     image: meta,
     date: "Apr 2023",
