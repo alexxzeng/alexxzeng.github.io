@@ -46,7 +46,8 @@ import {
   aws,
   mysql,
   firebase,
-  android
+  android,
+  cyber
 } from "../assets";
 
 export const navLinks = [
@@ -260,6 +261,27 @@ const educations = [
 
 const projects = [
   {
+    name: "Cyber Nation",
+    description:
+      "An E-commerce platform for sellers to list products for purchase using a secure checkout system, where sales statistics are tracked and displayed for sellers to monitor performance",
+    tags: [
+      {
+        name: "next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cyber,
+    source_code_link: "https://github.com/",
+  },
+  {
     name: "Grantors",
     description:
       "An accessible MERN web application for grant providers to post grants and review applications, users to apply for grants, and system admins to monitor activity and view statistics",
@@ -299,6 +321,27 @@ const projects = [
       },
     ],
     image: planner,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Food Delivery App",
+    description:
+      "Mobile app for customers to satisfy their cravings by ordering food from local restaurants and tracking their delivery status in real-time, with an embedded payment feature",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dart",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "tbd",
     source_code_link: "https://github.com/",
   },
   {

@@ -54,6 +54,7 @@ import grantors from "./grantors.png";
 import imageCompressor from "./imageCompressor.png";
 import planner from "./planner.png";
 import game from "./game.png";
+import cyber from "./cyber.png";
 
 export {
   logo,
@@ -109,4 +110,5 @@ export {
   game,
   ibm,
   stanford,
+  cyber,
 };
