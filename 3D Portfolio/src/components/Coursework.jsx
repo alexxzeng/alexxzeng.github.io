@@ -1,7 +1,7 @@
 import React from 'react'
 import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
-import { projects, coursework } from '../constants'
+import { coursework } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { styles } from '../styles'
 import { motion } from 'framer-motion'
@@ -15,7 +15,7 @@ const Coursework = () => {
             text-[20px] -mx-2 text-center'>Coursework Honourable Mentions</h2>
             <div className='mt-6 gap-9 flex flex-col'>
                 {coursework.map(((cw, index) => 
-                <div className='bg-tertiary rounded-xl border-[2px] border-[#6b21a8]'
+                <div className='bg-tertiary rounded-xl border-[2px] border-[#6b21a8] hover:scale-105 transition'
                 style={{boxShadow: '0px 5px 10px #6b21a8',}} key={index}>
                     <div className='hover:border-[#6b21a8] border-[2px] border-transparent p-2 px-4 pb-4 rounded-lg'>
                     <h1 className='font-semibold xs:text-xl mb-2 text-[16px]'>{cw.title}</h1>
@@ -32,7 +32,7 @@ const Coursework = () => {
             </div>
             </div>
         </motion.div>
-      </>
+    </>
   )
 }
 

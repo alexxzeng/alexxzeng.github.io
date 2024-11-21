@@ -30,23 +30,23 @@ const Tech = () => {
 
       <div className="flex flex-col justify-start items-center mt-16 min-h-[470px]">
         <h3 className="font-semibold text-secondary italic text-xl">"Learn continually. There’s always ‘one more thing’ to learn!" &nbsp; &nbsp;  - Steve Jobs</h3>
-        <div className="flex text-base xs:text-lg sm:text-base gap-8 sm:gap-10 lg:gap-20 mt-16 text-secondary md:text-xl font-semibold items-center w-fulljustify-center">
+        <div className="flex text-base xs:text-lg sm:text-base gap-8 sm:gap-10 lg:gap-20 mt-16 text-secondary md:text-xl font-semibold items-center w-full justify-center">
             <button className={`${selector === 0 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd]`} 
+            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
               onClick={() => {setSelector(0)}}>
               <h1 className="hidden lg:block">Programming Languages</h1>
               <h1 className="block lg:hidden">Languages</h1>
       
             </button>
             <button className={`${selector === 1 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd]`} 
+            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
               onClick={() => {setSelector(1);}}>
               <h1 className="hidden sm:block">Libraries/Frameworks</h1>
               <h1 className="block sm:hidden">Frameworks</h1>
         
             </button>
             <button className={`${selector === 2 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd]`} 
+            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
               onClick={() => setSelector(2)}>
               <h1 className="hidden sm:block">Tools/Databases</h1>
               <h1 className="block sm:hidden">Tools</h1>

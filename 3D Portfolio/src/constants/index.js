@@ -47,13 +47,22 @@ import {
   mysql,
   firebase,
   android,
-  cyber
+  cyber,
+  food,
+  finance,
+  graditor,
+  music,
+  spring
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "experience",
+    title: "Career",
   },
   {
     id: "projects",
@@ -149,6 +158,10 @@ const frameworks = [
     icon: express,
   },
   {
+    name: "Spring Boot",
+    icon: spring,
+  },
+  {
     name: "Django",
     icon: django,
   },
@@ -164,10 +177,10 @@ const frameworks = [
     name: "Bootstrap",
     icon: bootstrap,
   },
-  {
-    name: "Three.js",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three.js",
+  //   icon: threejs,
+  // },
   {
     name: "PyTorch",
     icon: pytorch,
@@ -221,12 +234,47 @@ const tools = [
   },
 ]
 
+const experience = [
+  {
+    position: "Application/Software Developer",
+    company: "Canadian Imperial Bank of Commerce (CIBC)",
+    date: "Sep 2024 - Present",
+    bulletpoints: [
+      
+    ],
+  },
+  {
+    position: "Teaching Assistant",
+    company: "University of Toronto at Scarborough",
+    date: "Aug 2024 - Present",
+    bulletpoints: [
+      
+    ],
+  },
+  {
+    position: "Full Stack Software Developer",
+    company: "Prime Canadian Homestay",
+    date: "Jan 2024 - Apr 2024",
+    bulletpoints: [
+      
+    ],
+  },
+  {
+    position: "Software Engineer Intern",
+    company: "Maple Bit Services",
+    date: "Jan 2023 - Aug 2023",
+    bulletpoints: [
+      
+    ],
+  }
+];
+
 const educations = [
   {
     title: "Honours Bachelor of Science",
     school: "Univeristy of Toronto",
     icon: uoft,
-    gpa: "3.78/4.0",
+    gpa: "3.80/4.0",
     iconBg: "#a0a6c3",
     date: "Sep 2021 - Present",
     specialist: "Computer Science",
@@ -259,7 +307,50 @@ const educations = [
 ];
 
 
-const projects = [
+const webDev = [
+  {
+    name: "Graditor",
+    supervision: "Prof. Sohee Kang",
+    description:
+      "A modern platform using machine learning algorithms for instructors to predict student final grades and automatically generating emails to notify students below a set threshold",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: graditor,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Finance Management Dashboard",
+    description:
+      "An online dashboard for users to connect personal bank accounts to track their transactions, visualize spending habits, and allowing transfers between different accounts",
+    tags: [
+      {
+        name: "next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "plaid",
+        color: "green-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: finance,
+    source_code_link: "https://github.com/",
+  },
   {
     name: "Cyber Nation",
     description:
@@ -302,6 +393,9 @@ const projects = [
     image: grantors,
     source_code_link: "https://github.com/",
   },
+];
+
+const mobileApps = [
   {
     name: "Course Manager & Planner",
     description:
@@ -341,26 +435,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "tbd",
+    image: food,
     source_code_link: "https://github.com/",
   },
-  {
-    name: "Image Compressor & Restorer",
-    description:
-      "A tool to process images with options to compress file size using K-means clustering on pixel RGBs and restore corrupted pixels using radial basis regression written in Python",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "machine-learning",
-        color: "green-text-gradient",
-      },
-    ],
-    image: imageCompressor,
-    source_code_link: "https://github.com/",
-  },
+];
+
+const gameDev = [
   {
     name: "Breaking Bad Game",
     description:
@@ -383,6 +463,49 @@ const projects = [
     source_code_link: "https://github.com/",
   },
 ];
+
+const machineLearning = [
+  {
+    name: "Music Generator",
+    description:
+      "A model that generates music using Long Short-Term Memory cells to form a Recurrent Neural Network, trained on a dataset provided by MIT using TensorFlow and Keras",
+    tags: [
+      {
+        name: "rnn",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tensorflow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "keras",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: music,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Image Compressor & Restorer",
+    description:
+      "A tool to process images with options to compress file size using K-means clustering on pixel RGBs and restore corrupted pixels using radial basis regression written in Python",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "machine-learning",
+        color: "green-text-gradient",
+      },
+    ],
+    image: imageCompressor,
+    source_code_link: "https://github.com/",
+  },
+];
+    
+
 
 const coursework = [
   {
@@ -448,4 +571,4 @@ const certificates = [
   }
 ];
 
-export { services, languages, educations, projects, coursework, certificates, frameworks, tools};
+export { services, languages, educations, coursework, certificates, frameworks, tools, experience, webDev, mobileApps, gameDev, machineLearning};

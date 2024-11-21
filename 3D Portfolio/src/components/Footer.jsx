@@ -14,7 +14,7 @@ const Footer = () => {
                 <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-white' target='_blank'>
                     <FontAwesomeIcon icon={faSquareGithub} /> 
                 </a>
-                <a href='https://www.linkedin.com/in/alex-zeng-uoft/' className='hover:text-white' target='_blank'>
+                <a href='https://www.linkedin.com/in/alexxzeng/' className='hover:text-white' target='_blank'>
                     <FontAwesomeIcon icon={faLinkedin}/> 
                 </a>
                 <a href='https://instagram.com/alex.zengg_' className='hover:text-white' target='_blank'>

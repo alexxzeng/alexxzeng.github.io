@@ -9,6 +9,8 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import ParticleBackground from './ParticleBackground';
 import Coursework from './Coursework';
+import Experience from './Experience';
+import MobilePopUp from './MobilePopUp';
 
 export {
   Hero,
@@ -24,5 +26,7 @@ export {
   ComputersCanvas, 
   StarsCanvas,
   ParticleBackground,
-   Coursework
+  Coursework,
+  Experience,
+  MobilePopUp
 }

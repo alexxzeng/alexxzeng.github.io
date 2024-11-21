@@ -22,6 +22,7 @@ module.exports = {
         edu: '1170px',
         pro: '390px',
         samsung: '430px',
+        phone: '410px',
         xxl: '1920px',
         hero: '1064px'
       },

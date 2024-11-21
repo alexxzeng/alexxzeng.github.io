@@ -39,6 +39,7 @@ import asm from "./tech/asm.png";
 import postgres from "./tech/postgres.png";
 import django from "./tech/django.jpg";
 import android from "./tech/android.png";
+import spring from "./tech/spring.png";
 
 import meta from "./company/meta.png";
 import uoft from "./uoft.png";
@@ -55,6 +56,10 @@ import imageCompressor from "./imageCompressor.png";
 import planner from "./planner.png";
 import game from "./game.png";
 import cyber from "./cyber.png";
+import food from "./food.png";
+import finance from "./finance.png";
+import graditor from "./graditor.png";
+import music from "./music.jfif";
 
 export {
   logo,
@@ -111,4 +116,9 @@ export {
   ibm,
   stanford,
   cyber,
+  food,
+  finance,
+  graditor,
+  music,
+  spring
 };

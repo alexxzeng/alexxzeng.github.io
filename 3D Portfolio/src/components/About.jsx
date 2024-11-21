@@ -45,7 +45,7 @@ const About = () => {
   return (
     <>
       <div className='flex items-start justify-around'>
-        <img src={me} alt="me" className='h-[680px] hidden mac:block big:mr-0 mac:mr-8'/>
+        <img src={me} alt="me" className='h-[680px] hidden mac:block big:mr-0 mac:mr-8 hover:scale-105 transition'/>
         <div>
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Introduction</p>

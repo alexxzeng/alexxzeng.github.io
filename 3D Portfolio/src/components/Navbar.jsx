@@ -3,9 +3,10 @@ import { Link} from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { menu, close } from '../assets';
-import myImage from '../assets/portrait.jpeg'
+import myImage from '../assets/portrait.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
     <nav className={`${styles.paddingX} w-full items-end py-4 
     fixed top-0 z-20 bg-primary max-w-[1920px]`}>
       <div className='w-full flex justify-between items-center mx-auto'>
-        <Link to='/New-Portfolio' className='flex items-center gap-2' 
+        <Link to='/' className='flex items-center gap-2' 
         onClick={() => {
           setActive('');
           window.scrollTo(0, 0)
@@ -28,7 +29,7 @@ const Navbar = () => {
             Zeng<span className='text-[#915eff]'>&gt;</span>
             </p>
         </Link>
-        <ul className='list-none hidden md:flex flex-row gap-10 items-center'>
+        <ul className='list-none hidden hero:flex flex-row gap-10 items-center'>
           {navLinks.map((link) => (
             <li key={link.id} className={`${active === link.title ? 'text-white' : 'text-secondary'}
             hover:text-white text-[18px] font-medium cursor-pointer group flex flex-col items-center`}
@@ -39,25 +40,27 @@ const Navbar = () => {
             </li>
           ))}
           <li className='flex gap-4'>
-              <a href='https://github.com/Alex-Zeng-UofT' className='text-secondary text-[30px] hover:text-white' target='_blank'>
+              <a href='https://github.com/Alex-Zeng-UofT' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
                 <FontAwesomeIcon icon={faSquareGithub} />
               </a>
-              <a href='https://www.linkedin.com/in/alex-zeng-uoft/' className='text-secondary text-[30px] hover:text-white' target='_blank'>
+              <a href='https://www.linkedin.com/in/alexxzeng/' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              
+              <a href='https://leetcode.com/u/alex_zeng/' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
+                <FontAwesomeIcon icon={faCode} width={33}/>
+              </a>
           </li>
           <li>
-            <a href='https://docs.google.com/document/d/1SxR9lrCR-16yJE5j8v7vo2sNfX_L7hafrIV7JwDiWow/edit?usp=sharing'
+            <a href='https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45ONZUSfdmj-zky0/view?usp=sharing'
               className='bg-secondary text-primary text-[19px] font-semibold p-2.5 rounded-lg pl-4 pr-4 
-              hover:bg-tertiary hover:text-secondary'
+              hover:bg-tertiary hover:text-secondary transition duration-[200ms]'
               target='_blank'>
               Resumé
             </a>
           </li>
         </ul>
 
-        <div className='md:hidden flex flex-1 justify-end items-center'>
+        <div className='hero:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu} alt='menu' className='w=[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setToggle(!toggle)}/>
           <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 
@@ -73,11 +76,24 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
-              <li className='mt-4' onClick={() => {
+              <li className='mt-4 flex gap-2 justify-between' onClick={() => {
                   setToggle(!toggle)
                 }}>
-                <a href='https://docs.google.com/document/d/1-GsOIfhcDDiW1-UsRlMcH7_EOGlJwW5SukLMsRB25rM/edit?usp=sharing'
-                  className='bg-secondary text-primary text-[17px] font-semibold p-2 rounded-lg pl-2 pr-2 
+                <a href='https://github.com/Alex-Zeng-UofT' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
+                <FontAwesomeIcon icon={faSquareGithub} />
+              </a>
+              <a href='https://www.linkedin.com/in/alexxzeng/' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href='https://leetcode.com/u/alex_zeng/' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
+                <FontAwesomeIcon icon={faCode} height={26} width={30}/>
+              </a>
+              </li>
+              <li className='flex justify-center w-full' onClick={() => {
+                  setToggle(!toggle)
+                }}>
+                <a href='https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45ONZUSfdmj-zky0/view?usp=sharing'
+                  className='bg-secondary text-primary text-[17px] font-semibold p-2 rounded-lg px-4 
                   hover:bg-primary hover:text-secondary '
                   target='_blank'>
                   Resumé
