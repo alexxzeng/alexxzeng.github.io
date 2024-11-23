@@ -52,7 +52,9 @@ import {
   finance,
   graditor,
   music,
-  spring
+  spring,
+  cibc,
+  mbs,
 } from "../assets";
 
 export const navLinks = [
@@ -239,33 +241,52 @@ const experience = [
     position: "Application/Software Developer",
     company: "Canadian Imperial Bank of Commerce (CIBC)",
     date: "Sep 2024 - Present",
-    bulletpoints: [
-      
-    ],
+    team: "Foreign Exchange Pricing Engine",
+    tech: "Java | Spring | Oracle SQL | Go | Azure",
+    icon: cibc,
+    roles: [
+      "Spearheaded the Foreign Exchange Engine team in conducting root cause analysis, patching critical bugs in Spring Boot using \
+      Java and Oracle SQL",
+      "Refined security by injecting comprehensive logging mechanisms across 4 microservices",
+      "Implemented CI/CD pipelines using Jenkins and Docker, leveraging YAML configurations to automate deployments on Azure",
+    ]
   },
   {
     position: "Teaching Assistant",
     company: "University of Toronto at Scarborough",
     date: "Aug 2024 - Present",
-    bulletpoints: [
-      
-    ],
+    team: "Department of Computer and Mathematical Sciences",
+    tech: "R | Python | Seaborn | Scikit-Learn",
+    icon: uoft,
+    roles: [
+      "Upscaled academic performance of 36 students by 15%, obtaining the second-highest average performance amongst all 17 tutorial sections",
+      "Administrated statistical analysis demonstrations using R and Seaborn in Python, leading weekly sessions for 24 participants",
+    ]
   },
   {
     position: "Full Stack Software Developer",
     company: "Prime Canadian Homestay",
     date: "Jan 2024 - Apr 2024",
-    bulletpoints: [
-      
-    ],
+    team: "Development & Delivery",
+    tech: "Java | Spring Boot | Angular | TypeScript | MySQL",
+    icon: '',
+    roles: [
+      "Streamlined development through adapting Agile methodologies, leading the planning phase as scrum master using Jira",
+      "Increased real-time usage rate by up to 30% through introducing a feedback functionality using Angular with TypeScript and Spring connecting to MySQL",
+    ]
   },
   {
     position: "Software Engineer Intern",
     company: "Maple Bit Services",
-    date: "Jan 2023 - Aug 2023",
-    bulletpoints: [
-      
-    ],
+    date: "May 2023 - Aug 2023",
+    team: "Payment Solutions",
+    tech: "C++ | Redis",
+    icon: mbs,
+    roles: [
+      "Enhanced proprietary Point-of-Sale (POS) algorithm with parallel processing using C++ in Linux",
+      "Identified underlying performance bottlenecks, resolving critical deadlocks and starvation in multi-threaded architecture",
+      "Implemented in-memory caching using Redis and strengthened database fault tolerance through partitioning data across multiple nodes",
+    ]
   }
 ];
 
@@ -274,7 +295,7 @@ const educations = [
     title: "Honours Bachelor of Science",
     school: "Univeristy of Toronto",
     icon: uoft,
-    gpa: "3.80/4.0",
+    gpa: "3.81/4.0",
     iconBg: "#a0a6c3",
     date: "Sep 2021 - Present",
     specialist: "Computer Science",

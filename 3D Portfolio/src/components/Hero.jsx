@@ -41,7 +41,7 @@ const Hero = () => {
               <a href='https://github.com/Alex-Zeng-UofT' className='hover:text-purple-300 glow-text-thin transition duration-200 hover:scale-105' target='_blank'>
                 <FontAwesomeIcon icon={faSquareGithub} /> &nbsp;GitHub
               </a>
-              <a href='https://www.linkedin.com/in/alex-zeng-uoft/' className='hover:text-purple-300 glow-text-thin transition duration-200 hover:scale-105' target='_blank'>
+              <a href='https://www.linkedin.com/in/alexxzeng/' className='hover:text-purple-300 glow-text-thin transition duration-200 hover:scale-105' target='_blank'>
                 <FontAwesomeIcon icon={faLinkedin} /> &nbsp;LinkedIn
               </a>
               <a href="https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45ONZUSfdmj-zky0/view?usp=sharing" 

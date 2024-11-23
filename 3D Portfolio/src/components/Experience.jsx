@@ -17,7 +17,12 @@ const ExperienceCard = ({ experience, num }) => (
     dateClassName="date"
     className="-mx-[14px] sm:-mx-0 "
     iconStyle={{ background: '#a0a6c3' }}
-    >
+    icon={
+      experience.icon &&
+      <div className="flex justify-center items-center w-full h-full">
+        <img src={experience.icon} alt="" className={`${num == 1 ? 'mt-1' : 'mt-0'} w-[80%] h-[80%] object-contain`}/>
+      </div>
+    }>
 
       <div>
 
@@ -38,12 +43,31 @@ const ExperienceCard = ({ experience, num }) => (
 
         
         <div className="flex flex-col gap-0">
-            {/* <span className="text-white font-semibold xs:text-[16px] text-[15px]">Team/Department:</span> */}
-            {experience.bulletpoints.map((point, index) => (
-            <div key={index} className="flex flex-row items-start gap-1">
-                <p>•</p>
-                <p className="sm:ml-6 xs:ml-2 ml-1 xs:text-[14px] sm:text-[16px] text-[13px] mb-6 text-secondary">{point}</p> 
-            </div>))}
+            <span className="text-white font-semibold xs:text-[16px] text-[15px]">Team:</span>
+            
+            <div className="flex flex-row items-center gap-1 mt-1">
+                <h1 className="sm:ml-3 xs:ml-2 ml-1 xs:text-[14px] sm:text-[16px] text-[13px] mb-6 text-secondary">• {experience.team}</h1> 
+            </div>
+        </div>
+
+        <div className="flex flex-col gap-0">
+            <span className="text-white font-semibold xs:text-[16px] text-[15px]">Tech Stack:</span>
+            
+            <div className="flex flex-row items-center gap-1 mt-1">
+                <h1 className="sm:ml-3 xs:ml-2 ml-1 xs:text-[14px] sm:text-[16px] text-[13px] mb-6 text-secondary">• {experience.tech}</h1> 
+            </div>
+        </div>
+
+        <div className="flex flex-col gap-0">
+            <span className="text-white font-semibold xs:text-[16px] text-[15px]">Roles:</span>
+            
+            <div className="flex flex-col items-center gap-1 mt-1">
+
+                {experience.roles.map((role, index) => (
+                    <h1 key={index} className="sm:ml-3 xs:ml-2 ml-1 xs:text-[14px] sm:text-[16px] text-[13px] mb-6 text-secondary">• {role}</h1> 
+                ))}
+
+            </div>
         </div>
         
       </div>

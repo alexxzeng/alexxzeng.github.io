@@ -61,6 +61,9 @@ import finance from "./finance.png";
 import graditor from "./graditor.png";
 import music from "./music.jfif";
 
+import cibc from "./company/cibc.png";
+import mbs from "./company/mbs.png";
+
 export {
   logo,
   backend,
@@ -120,5 +123,7 @@ export {
   finance,
   graditor,
   music,
-  spring
+  spring,
+  cibc,
+  mbs,
 };

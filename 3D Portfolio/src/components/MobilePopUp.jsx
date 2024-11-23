@@ -12,7 +12,7 @@ const MobilePopUp = () => {
           <div className='w-full h-full bg-primary rounded-[14px] p-6 flex flex-col justify-between'>
             <div className="w-full flex flex-col gap-2">
               <h1 className='text-white text-4xl text-center font-bold'>Hey There!</h1>
-              <h2 className='text-center text-secondary text-xl'>Seems like your on a phone</h2>
+              <h2 className='text-center text-secondary text-xl'>Seems like you're on a phone</h2>
             </div>
             
 
