@@ -64,6 +64,8 @@ import music from "./music.jfif";
 import cibc from "./company/cibc.png";
 import mbs from "./company/mbs.png";
 
+import me from "./me.mp4";
+
 export {
   logo,
   backend,
@@ -126,4 +128,5 @@ export {
   spring,
   cibc,
   mbs,
+  me
 };

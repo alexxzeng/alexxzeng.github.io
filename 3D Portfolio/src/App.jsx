@@ -12,8 +12,7 @@ const App = () => {
       <div className="relative z-0 bg-primary flex justify-center">
         <MobilePopUp />
         <div className="max-w-[1920px] w-full">
-          <div className="bg-hero-pattern bg-cover 
-          bg-no-repeat bg-center">
+          <div className=" bg-center">
             <Navbar />
             <Hero />
           </div>
