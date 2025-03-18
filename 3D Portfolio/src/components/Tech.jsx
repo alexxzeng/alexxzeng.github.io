@@ -2,11 +2,11 @@ import { BallCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
 import { languages, frameworks, tools } from "../constants"
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
 import { styles } from '../styles'
 import { useEffect, useState } from "react";
 import { PacmanLoader } from "react-spinners";
 import { work } from "../constants";
+import { fadeIn, textVariant } from '../utils/motion';
 
 const Tech = () => {
 
@@ -74,31 +74,32 @@ const Tech = () => {
 
         <div className="bg-tertiary rounded-xl w-[560px] p-10 flex flex-col gap-12 h-fit relative border-2 border-[#3e346e]">
             {work.map((work, index) => (
-              <div key={index} className="flex gap-4 relative hover:scale-105 transition duration-200">
+              <motion.div variants={fadeIn('top', 'spring', 1 + 0.5 * index, 0.75)} key={index}>
                 {/* Vertical Line */}
                 {/* {index !== 3 && (
                   <div className="absolute left-[38px] top-[80px] w-[2px] h-[40px] mt-1 bg-secondary"></div>
                 )} */}
-
-                <div className="flex w-full items-center gap-4"> 
-                  {/* Icon container with vertical line */}
-                  <div className="relative flex justify-center items-center p-4 bg-primary rounded-xl aspect-w-1 aspect-h-1">
-                    <img src={work.icon} alt="" className="h-12 w-12 rounded-xl" />
-                  </div>
-
-                  <div className="grow">
-                    <div className="flex justify-between">
-                      <h1 className="text-white text-lg font-semibold">{work.company}</h1>
-                      <h1 className="text-white text-sm font-semibold">{work.location}</h1>   
+                <div className="flex gap-4 relative hover:scale-105 transition duration-200">
+                  <div className="flex w-full items-center gap-4"> 
+                    {/* Icon container with vertical line */}
+                    <div className="relative flex justify-center items-center p-4 bg-primary rounded-xl aspect-w-1 aspect-h-1">
+                      <img src={work.icon} alt="" className="h-12 w-12 rounded-xl" />
                     </div>
 
-                    <div className="flex justify-between">
-                      <h1 className="text-secondary text-sm font-semibold">{work.position}</h1>
-                      <h1 className="text-secondary text-sm font-semibold">{work.date}</h1>   
+                    <div className="grow">
+                      <div className="flex justify-between">
+                        <h1 className="text-white text-lg font-semibold">{work.company}</h1>
+                        <h1 className="text-white text-sm font-semibold">{work.location}</h1>   
+                      </div>
+
+                      <div className="flex justify-between">
+                        <h1 className="text-secondary text-sm font-semibold">{work.position}</h1>
+                        <h1 className="text-secondary text-sm font-semibold">{work.date}</h1>   
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
           ))}
         </div>
       </div>
