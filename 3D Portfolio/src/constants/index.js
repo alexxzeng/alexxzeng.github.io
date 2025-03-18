@@ -293,22 +293,25 @@ const experience = [
 
 const work = [  
   {
-    position: "Software Engineer Intern",
+    position: "Software Engineer",
     company: "Amazon",
+    location: "Vancouver, BC",
     date: "May 2023 - Aug 2023",
     team: "Payment Solutions",
     icon: amazon,
   },
   {
-    position: "Software Engineer Intern",
+    position: "Software Developer",
     company: "CIBC",
+    location: "Toronto, ON",
     date: "May 2023 - Aug 2023",
     team: "Payment Solutions",
     icon: cibc,
   },
   {
-    position: "Teachhing Assistant",
+    position: "Teaching Assistant",
     company: "University of Toronto",
+    location: "Toronto, ON",
     date: "May 2023 - Aug 2023",
     team: "Payment Solutions",
     icon: uoft,
@@ -316,6 +319,7 @@ const work = [
   {
     position: "Software Engineer Intern",
     company: "Maple Bit Services",
+    location: "Ajax, ON",
     date: "May 2023 - Aug 2023",
     team: "Payment Solutions",
     icon: mbs,
