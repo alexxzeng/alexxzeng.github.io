@@ -66,6 +66,7 @@ import mbs from "./company/mbs.png";
 
 import me from "./me.mp4";
 import wave from "./wave.png"
+import arrow from "./arrow.png"
 
 export {
   logo,
@@ -130,5 +131,6 @@ export {
   cibc,
   mbs,
   me,
-  wave
+  wave,
+  arrow
 };

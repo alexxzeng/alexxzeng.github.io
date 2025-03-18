@@ -7,7 +7,7 @@ import { Tilt } from 'react-tilt';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import {me, wave} from '../assets/'
+import {me, wave, arrow} from '../assets/'
 
 const Hero = () => {
 
@@ -66,13 +66,14 @@ const Hero = () => {
 
       </div>
 
-      <div className='absolute bottom-0 right-0 mr-16 mb-8 hidden md:flex flex-col gap-4 z-10'>
+      <div className='absolute bottom-0 right-0 mr-16 mb-8 hidden md:flex flex-col gap-4 z-10 scale-75 xl:scale-100'>
         <div className='h-28 w-28 rounded-full bg-tertiary flex justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto xl:mx-0'>
             <FontAwesomeIcon icon={faSquareGithub} className='text-6xl text-secondary opacity-80 transition hover:opacity-100 hover:cursor-pointer'/>
         </div>
         <div className='h-28 w-28 rounded-full bg-tertiary flex justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto xl:mx-0'>
             <FontAwesomeIcon icon={faLinkedin} className='text-6xl text-secondary opacity-80 transition hover:opacity-100 hover:cursor-pointer'/>
         </div>
+        <img src={arrow} alt="arrow" className="h-60 min-w-56 absolute -top-20 right-32" />
         <div className='h-28 w-28 rounded-full bg-tertiary flex justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto xl:mx-0'>
           <a href="#about">
             <FontAwesomeIcon icon={faArrowDown} className='text-6xl text-secondary opacity-80 transition hover:opacity-100 hover:cursor-pointer'/>
