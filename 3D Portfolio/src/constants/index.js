@@ -55,6 +55,7 @@ import {
   spring,
   cibc,
   mbs,
+  amazon,
 } from "../assets";
 
 export const navLinks = [
@@ -289,6 +290,37 @@ const experience = [
     ]
   }
 ];
+
+const work = [  
+  {
+    position: "Software Engineer Intern",
+    company: "Amazon",
+    date: "May 2023 - Aug 2023",
+    team: "Payment Solutions",
+    icon: amazon,
+  },
+  {
+    position: "Software Engineer Intern",
+    company: "CIBC",
+    date: "May 2023 - Aug 2023",
+    team: "Payment Solutions",
+    icon: cibc,
+  },
+  {
+    position: "Teachhing Assistant",
+    company: "University of Toronto",
+    date: "May 2023 - Aug 2023",
+    team: "Payment Solutions",
+    icon: uoft,
+  },
+  {
+    position: "Software Engineer Intern",
+    company: "Maple Bit Services",
+    date: "May 2023 - Aug 2023",
+    team: "Payment Solutions",
+    icon: mbs,
+  },
+]
 
 const educations = [
   {
@@ -592,4 +624,4 @@ const certificates = [
   }
 ];
 
-export { services, languages, educations, coursework, certificates, frameworks, tools, experience, webDev, mobileApps, gameDev, machineLearning};
+export { services, languages, educations, coursework, certificates, frameworks, tools, experience, webDev, mobileApps, gameDev, machineLearning, work};

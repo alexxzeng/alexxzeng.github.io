@@ -63,6 +63,7 @@ import music from "./music.jfif";
 
 import cibc from "./company/cibc.png";
 import mbs from "./company/mbs.png";
+import amazon from "./company/amazon.jpg";
 
 import me from "./me.webm";
 import wave from "./wave.png"
@@ -132,5 +133,6 @@ export {
   mbs,
   me,
   wave,
-  arrow
+  arrow,
+  amazon
 };
