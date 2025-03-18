@@ -65,6 +65,7 @@ import cibc from "./company/cibc.png";
 import mbs from "./company/mbs.png";
 
 import me from "./me.mp4";
+import wave from "./wave.png"
 
 export {
   logo,
@@ -128,5 +129,6 @@ export {
   spring,
   cibc,
   mbs,
-  me
+  me,
+  wave
 };
