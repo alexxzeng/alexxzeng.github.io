@@ -7,15 +7,20 @@ import { Tilt } from 'react-tilt';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import {me, wave, arrow} from '../assets/'
+import {wave, arrow} from '../assets/'
+import me2 from '../assets/me.mov'
+import me from '../assets/me.webm'
+
 
 const Hero = () => {
+
+  
 
   return (
     <section className='relative w-full h-screen mx-auto md:pt-40 pt-28'>
 
-      <div className='xl:ml-48 xl:mr-32 flex justify-between items-center z-[10]'>
-        <div className='xs:w-[360px] w-[320px] h-[180px] rounded-xl bg-tertiary flex flex-col justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto xl:mx-0'>
+      <div className='xl:ml-48 xl:mr-32 ml-20 flex justify-between items-center z-[10]'>
+        <div className='xs:w-[360px] w-[320px] h-[180px] rounded-xl bg-tertiary flex flex-col justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto lg:mx-0 2xl:scale-125'>
           <div className='flex justify-center items-center gap-2'>
              <img src={wave} alt="hand" className='h-16 w-16 -mt-2'/>
              Hey, I'm Alex!
@@ -47,8 +52,10 @@ const Hero = () => {
 
       <div className='absolute bottom-0 w-full'>
         <video autoPlay muted loop id="myVideo" className='mx-auto z-0 h-[75vh]'>
-          <source src={me} type="video/mp4"/>
+        <source src={me2} type="video/quicktime"/>
+          <source src={me} type="video/webm"/>
         </video>
+        {/* <img src={me} alt="me" className='h-[75vh] mx-auto'/> */}
       </div>
 
       
@@ -68,10 +75,14 @@ const Hero = () => {
 
       <div className='absolute bottom-0 right-0 mr-16 mb-8 hidden md:flex flex-col gap-4 z-10 scale-75 xl:scale-100'>
         <div className='h-28 w-28 rounded-full bg-tertiary flex justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto xl:mx-0'>
-            <FontAwesomeIcon icon={faSquareGithub} className='text-6xl text-secondary opacity-80 transition hover:opacity-100 hover:cursor-pointer'/>
+            <a href='https://github.com/alexxzeng' target='_blank'>
+              <FontAwesomeIcon icon={faSquareGithub} className='text-6xl text-secondary opacity-80 transition hover:opacity-100 hover:cursor-pointer'/>
+            </a>
         </div>
         <div className='h-28 w-28 rounded-full bg-tertiary flex justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto xl:mx-0'>
-            <FontAwesomeIcon icon={faLinkedin} className='text-6xl text-secondary opacity-80 transition hover:opacity-100 hover:cursor-pointer'/>
+            <a href='https://linkedin.com/in/alexxzeng' target='_blank'>
+              <FontAwesomeIcon icon={faLinkedin} className='text-6xl text-secondary opacity-80 transition hover:opacity-100 hover:cursor-pointer'/>
+            </a>
         </div>
         <img src={arrow} alt="arrow" className="h-60 min-w-56 absolute -top-20 right-32" />
         <div className='h-28 w-28 rounded-full bg-tertiary flex justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto xl:mx-0'>

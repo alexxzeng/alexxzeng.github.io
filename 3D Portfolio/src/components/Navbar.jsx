@@ -40,7 +40,7 @@ const Navbar = () => {
             </li>
           ))}
           <li className='flex gap-4'>
-              <a href='https://github.com/Alex-Zeng-UofT' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
+              <a href='https://github.com/alexxzeng' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
                 <FontAwesomeIcon icon={faSquareGithub} />
               </a>
               <a href='https://www.linkedin.com/in/alexxzeng/' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
