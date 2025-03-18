@@ -7,9 +7,7 @@ import { Tilt } from 'react-tilt';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import {wave, arrow} from '../assets/'
-import me2 from '../assets/me.mov'
-import me from '../assets/me.webm'
+import {wave, arrow, me} from '../assets/'
 
 
 const Hero = () => {
@@ -52,7 +50,6 @@ const Hero = () => {
 
       <div className='absolute bottom-0 w-full'>
         <video autoPlay muted loop id="myVideo" className='mx-auto z-0 h-[75vh]'>
-        <source src={me2} type="video/quicktime"/>
           <source src={me} type="video/webm"/>
         </video>
         {/* <img src={me} alt="me" className='h-[75vh] mx-auto'/> */}
