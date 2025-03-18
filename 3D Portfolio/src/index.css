@@ -137,11 +137,11 @@
 }
 
 .glow-text {
-  text-shadow: 0 0 2px #915eff, 0 0 13px #6b21a8;
+  text-shadow: 0 0 2px #915eff, 0 0 13px #3e346e;
 }
 
 .glow-text-thin {
-  text-shadow: 0 0 2px #915eff, 0 0 5px #6b21a8;
+  text-shadow: 0 0 2px #915eff, 0 0 5px #3e346e;
 }
 
 .vertical-timeline::before {

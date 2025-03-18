@@ -24,9 +24,9 @@ const Navbar = () => {
         }}>
           <img src={myImage} alt="logo" className='w-[72px] h-[72px] object-contain rounded-[25px] mr-3'/>
           <p className='text-white text-[22px] font-bold cursor-pointer glow-text'>
-            <span className='text-[#915eff]'>&lt;</span>Alex<span className='text-[#915eff]'>&gt;&lt;</span>
-            <span className='text-[16px] text-[#915eff]'>/</span>
-            Zeng<span className='text-[#915eff]'>&gt;</span>
+            <span className='text-[#44387d]'>&lt;</span>Alex<span className='text-[#44387d]'>&gt;&lt;</span>
+            <span className='text-[16px] text-[#44387d]'>/</span>
+            Zeng<span className='text-[#44387d]'>&gt;</span>
             </p>
         </Link>
         <ul className='list-none hidden hero:flex flex-row gap-10 items-center'>
