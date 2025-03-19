@@ -30,7 +30,7 @@ const Tech = () => {
       </motion.div>
 
 
-      <div className="flex w-full 2xl:px-32 items-center xl:justify-around xl:items-end xl:flex-row gap-10 sm:gap-24 xl:gap-4 flex-col-reverse">
+      <div className="flex w-full 2xl:px-32 items-center xl:justify-around xl:items-end xl:flex-row gap-10 sm:gap-24 xl:gap-4 flex-col-reverse xl:-mt-8 mt-6">
 
         <div className="flex flex-col justify-start items-start min-h-[600px] w-fit">
           <div className="flex text-base xs:text-lg sm:text-sm gap-4 sm:gap-6 lg:gap-8 mt-16 text-secondary md:text-sm font-semibold items-center justify-center w-full">
@@ -55,15 +55,15 @@ const Tech = () => {
                 <h1 className="block sm:hidden">Tools</h1>
               </button>
           </div>
-          <div className="flex justify-start mt-14">
-            <div className="flex flex-row flex-wrap justify-center md:justify-start gap-12 md:w-[40rem] w-[360px] items-center">
+          <div className="flex justify-center mt-14 md:w-[40rem] w-[360px]">
+            <div className="flex flex-row flex-wrap justify-center md:justify-start gap-12 items-center w-[360px] md:w-[530px]">
               {loading ? 
               <div className="text-2xl text-secondary font-semibold mt-8 w-full flex flex-col items-center justify-center">
                 <h1 className="mb-8 mx-auto">Loading...</h1>
                 <PacmanLoader color="#915eff" size={40} loading={loading} speedMultiplier={1.2} className="mx-auto"/>
               </div> 
               : categories[selector].map((selector) => (
-                <div className="w-28 h-28" key={selector.name}>
+                <div className="w-24 h-24" key={selector.name}>
                   <BallCanvas icon={selector.icon}></BallCanvas>
                   <div className="flex items-center justify-center text-center text-secondary font-semibold text-[18px]">{selector.name}</div>
                 </div>
@@ -72,7 +72,7 @@ const Tech = () => {
           </div>
         </div>
 
-        <div className="bg-tertiary rounded-xl sm:w-[560px] w-[350px] p-4 sm:p-10 flex flex-col gap-12 h-fit relative border-2 border-[#3e346e] mt-10 sm:mt-0">
+        <div className="bg-tertiary rounded-xl sm:w-[560px] w-[350px] p-4 sm:p-10 flex flex-col gap-12 h-fit relative border-2 border-[#3e346e] mt-4 sm:mt-0">
             {work.map((work, index) => (
               <motion.div variants={fadeIn('top', 'spring', 1 + 0.5 * index, 0.75)} key={index}>
                 {/* Vertical Line */}
