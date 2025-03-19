@@ -7,12 +7,20 @@ import { Tilt } from 'react-tilt';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import {wave, arrow, me} from '../assets/'
+import {wave, arrow} from '../assets/'
+import me from '../../public/me.webm'
+import { useRef, useEffect } from 'react';
 
 
 const Hero = () => {
 
+    const videoRef = useRef(null);
   
+    useEffect(() => {
+      if (videoRef.current) {
+        videoRef.current.play().catch((err) => console.error("Video play error:", err));
+      }
+    }, []);
 
   return (
     <section className='relative w-full h-screen mx-auto md:pt-40 pt-28'>
@@ -49,7 +57,7 @@ const Hero = () => {
       
 
       <div className='absolute bottom-0 w-full'>
-        <video autoPlay muted loop id="myVideo" className='mx-auto z-0 h-[75vh]'>
+        <video ref={videoRef} autoPlay muted loop playsInline id="myVideo" preload="auto" className='mx-auto z-0 h-[75vh]'>
           <source src={me} type="video/webm"/>
         </video>
         {/* <img src={me} alt="me" className='h-[75vh] mx-auto'/> */}
