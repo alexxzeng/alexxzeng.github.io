@@ -23,10 +23,10 @@ const Hero = () => {
     }, []);
 
   return (
-    <section className='relative w-full h-screen mx-auto md:pt-40 pt-28'>
+    <section className='relative w-full h-screen mx-auto md:pt-40 pt-32'>
 
       <div className='xl:ml-48 xl:mr-32 lg:ml-20 ml-0 flex z-[10]'>
-        <div className='xs:w-[360px] w-[320px] h-[180px] rounded-xl bg-tertiary flex flex-col justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto lg:mx-0 2xl:scale-125'>
+        <div className='xs:w-[360px] w-[320px] xs:h-[180px] h-[140px] rounded-xl bg-tertiary flex flex-col justify-center items-center text-3xl gap-2 font-bold z-10 mx-auto lg:mx-0 2xl:scale-125'>
           <div className='flex justify-center items-center gap-2'>
              <img src={wave} alt="hand" className='h-16 w-16 -mt-2'/>
              Hey, I'm Alex!
