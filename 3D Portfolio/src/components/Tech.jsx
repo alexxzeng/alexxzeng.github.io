@@ -72,7 +72,7 @@ const Tech = () => {
           </div>
         </div>
 
-        <div className="bg-tertiary rounded-xl sm:w-[560px] w-[350px] p-4 sm:p-10 flex flex-col gap-12 h-fit relative border-2 border-[#3e346e] mt-4 sm:mt-0">
+        <div className="bg-tertiary rounded-xl sm:w-[560px] w-[350px] p-4 sm:p-10 flex flex-col gap-12 h-fit relative  mt-4 sm:mt-0 shadow-[0_8px_8px_-3px] shadow-purple-900">
             {work.map((work, index) => (
               <motion.div variants={fadeIn('top', 'spring', 1 + 0.5 * index, 0.75)} key={index}>
                 {/* Vertical Line */}

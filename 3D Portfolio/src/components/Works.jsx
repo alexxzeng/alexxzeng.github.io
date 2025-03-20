@@ -14,7 +14,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
     <Tilt>
       <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)} className='flex justify-center items-center'>
         <div className=' p-[1px] sm:w-fit rounded-2xl' >
-          <div className='border-2 border-[#3e346e] relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 sm:px-10 px-5 rounded-2xl shadow-sm shadow-purple-800 flex
+          <div className=' border-[#3e346e] relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 sm:px-10 px-5 rounded-2xl shadow-[0_8px_8px_-3px] shadow-purple-900 flex
               flex-col items-center gap-2'>
               <div className='font-semibold text-base phone:text-lg mb-1 flex gap-2'>
                 {name}

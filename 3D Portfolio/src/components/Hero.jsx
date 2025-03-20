@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import {wave, arrow} from '../assets/'
-import me from '../../public/me.webm'
+import me from '/me.webm'
 import { useRef, useEffect } from 'react';
 
 
