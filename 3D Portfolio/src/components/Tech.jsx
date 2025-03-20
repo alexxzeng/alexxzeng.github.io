@@ -34,22 +34,22 @@ const Tech = () => {
 
         <div className="flex flex-col justify-start items-start min-h-[600px] w-fit">
           <div className="flex text-base xs:text-lg sm:text-sm gap-4 sm:gap-6 lg:gap-8 mt-16 text-secondary md:text-sm font-semibold items-center justify-center w-full">
-              <button className={`${selector === 0 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-              justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
+              <button className={`${selector === 0 ? 'text-[#cdcdcd] bg-tertiary border-[#6a45ba] shadow-[0_2px_8px_2px] shadow-purple-900' : 'bg-tertiary border-tertiary'} flex flex-col 
+              justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-[102%] trasition`} 
                 onClick={() => {setSelector(0)}}>
                 <h1 className="hidden lg:block">Programming Languages</h1>
                 <h1 className="block lg:hidden">Languages</h1>
         
               </button>
-              <button className={`${selector === 1 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-              justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
+              <button className={`${selector === 1 ? 'text-[#cdcdcd] bg-tertiary border-[#6a45ba] shadow-[0_2px_8px_2px] shadow-purple-900' : 'bg-tertiary border-tertiary'} flex flex-col 
+              justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-[102%]  trasition`} 
                 onClick={() => {setSelector(1);}}>
                 <h1 className="hidden sm:block">Libraries/Frameworks</h1>
                 <h1 className="block sm:hidden">Frameworks</h1>
           
               </button>
-              <button className={`${selector === 2 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-              justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
+              <button className={`${selector === 2 ? 'text-[#cdcdcd] bg-tertiary border-[#6a45ba] shadow-[0_2px_8px_2px] shadow-purple-900' : 'bg-tertiary border-tertiary'} flex flex-col 
+              justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-[102%] trasition`} 
                 onClick={() => setSelector(2)}>
                 <h1 className="hidden sm:block">Tools/Databases</h1>
                 <h1 className="block sm:hidden">Tools</h1>
@@ -60,7 +60,7 @@ const Tech = () => {
               {loading ? 
               <div className="text-2xl text-secondary font-semibold mt-8 w-full flex flex-col items-center justify-center">
                 <h1 className="mb-8 mx-auto">Loading...</h1>
-                <PacmanLoader color="#915eff" size={40} loading={loading} speedMultiplier={1.2} className="mx-auto"/>
+                <PacmanLoader color="#6a45ba" size={40} loading={loading} speedMultiplier={1.2} className="mx-auto"/>
               </div> 
               : categories[selector].map((selector) => (
                 <div className="w-24 h-24" key={selector.name}>
