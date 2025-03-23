@@ -16,7 +16,7 @@ const ServiceCard = ({ index, title, icon, info }) => {
       <Tilt className='2xl:w-[250px] xs:w-[230px] sm:w-[300px] w-[90%] lg:w-[300px] xl:w-[230px]' >
         <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
           <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
-            <div className='w-full border-2 border-[#3e346e] p-[1px] rounded-[23px] cursor-pointer'
+            <div className='w-full shadow-[0_8px_8px_-3px] shadow-purple-900 p-[1px] rounded-[23px] cursor-pointer'
               options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}
               >
               <div className='bg-tertiary rounded-[20px] py-5 px-12 2xl:min-h-[260px] min-h-[240px] flex 
@@ -26,7 +26,7 @@ const ServiceCard = ({ index, title, icon, info }) => {
               </div>
             </div>
 
-            <div className='w-full border-2 border-[#3e346e] p-[1px] rounded-[23px] cursor-pointer'
+            <div className='w-full shadow-[0_8px_8px_-3px] shadow-purple-900 p-[1px] rounded-[23px] cursor-pointer'
               options={{max: 45, scale: 1, speed: 450}} onClick={() => setIsFlipped(!isFlipped)}
               >
               <div className='bg-tertiary rounded-[20px] py-5 px-8 2xl:min-h-[260px] min-h-[240px] flex 
@@ -53,8 +53,8 @@ const About = () => {
           </motion.div>
           <motion.p variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary sm:text-[17px] text-[14px] 2xl:max-w-7xl max-w-6xl sm:leading-[30px] leading-[26px]'>
-            I'm currently a 3rd year student specializing in the <i><b>Software Engineering</b></i> stream 
-            of <i><b>Computer Science</b></i> and minoring in <i><b>Statistics</b></i> at the <i><b>University of Toronto</b></i>.
+            I'm currently a 4th year student specializing in the <i><b>Software Engineering</b></i> stream 
+            of <i><b>Computer Science</b></i> and majoring in <i><b>Statistics</b></i> at the <i><b>University of Toronto</b></i>.
             I am fortunate to have had many opportunities to develop and enhance the analytical and logical
             thinking skills of a programmer through object-oriented languages such as <i><b>Java, Python, C++,</b></i> 
             and <i><b>JavaScript</b></i>. Using these languages and industrial development methodologies, I have built many interesting projects that range
