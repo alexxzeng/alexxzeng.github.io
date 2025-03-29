@@ -11,6 +11,7 @@ import ParticleBackground from './ParticleBackground';
 import Coursework from './Coursework';
 import Experience from './Experience';
 import MobilePopUp from './MobilePopUp';
+import MobileHero from './MobileHero';
 
 export {
   Hero,
@@ -28,5 +29,6 @@ export {
   ParticleBackground,
   Coursework,
   Experience,
-  MobilePopUp
+  MobilePopUp,
+  MobileHero
 }

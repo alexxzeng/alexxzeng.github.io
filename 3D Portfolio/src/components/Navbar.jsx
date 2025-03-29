@@ -51,7 +51,7 @@ const Navbar = () => {
               </a>
           </li>
           <li>
-            <a href='https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45ONZUSfdmj-zky0/view?usp=sharing'
+            <a href='https://drive.google.com/file/d/1gmBIEwNfSDV45ONZUSfdmj-zky0/view?usp=sharing'
               className='bg-secondary text-primary text-[19px] font-semibold p-2.5 rounded-lg pl-4 pr-4 
               hover:bg-tertiary hover:text-secondary transition duration-[200ms]'
               target='_blank'>
@@ -92,7 +92,7 @@ const Navbar = () => {
               <li className='flex justify-center w-full' onClick={() => {
                   setToggle(!toggle)
                 }}>
-                <a href='https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45ONZUSfdmj-zky0/view?usp=sharing'
+                <a href='https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45Ofdmj-zky0/view?usp=sharing'
                   className='bg-secondary text-primary text-[17px] font-semibold p-2 rounded-lg px-4 
                   hover:bg-primary hover:text-secondary '
                   target='_blank'>
