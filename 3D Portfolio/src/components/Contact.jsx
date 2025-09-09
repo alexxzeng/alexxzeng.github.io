@@ -62,9 +62,9 @@ const Contact = () => {
 
   return (
     <div className="flex xl:mt-12 xl:flex-row flex-col-reverse overflow-hidden xl:ml-[4vw] 
-    justify-center xl:justify-around">
+    justify-center xl:justify-around pb-32">
       <motion.div variants={slideIn('left', 'tween', 0.2, 1)}
-      className="flex-[0.75] bg-black-100 p-8 rounded-2xl max-w-xl">
+      className="flex-[0.75] bg-tertiary p-8 rounded-2xl max-w-xl shadow-[0_10px_8px_-3px] shadow-purple-900">
         <p className={styles.sectionSubText}>Connect with me</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
@@ -74,7 +74,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Name</span>
             <input type="text" name="name" value={form.name} required
             onChange={handleChange} placeholder="Let's Start With Your Name"
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary
+            className="bg-[#2d2742] py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outlined-none border-none font-medium"/>
           </label>
 
@@ -82,7 +82,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Email</span>
             <input type="text" name="email" value={form.email} required
             onChange={handleChange} placeholder="And Now Your Email"
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary
+            className="bg-[#2d2742] py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outlined-none border-none font-medium"/>
           </label>
 
@@ -90,7 +90,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea rows='6' name="message" value={form.message} required
             onChange={handleChange} placeholder="Finally, Your Epic Message To Be Delivered"
-            className="bg-tertiary py-4 px-6 placeholder:text-secondary
+            className="bg-[#2d2742] py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outlined-none border-none font-medium"/>
           </label>
 

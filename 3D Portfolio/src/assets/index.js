@@ -63,6 +63,11 @@ import music from "./music.jfif";
 
 import cibc from "./company/cibc.png";
 import mbs from "./company/mbs.png";
+import amazon from "./company/amazon.jpg";
+
+import me from "./me.webm";
+import wave from "./wave.png"
+import arrow from "./arrow.png"
 
 export {
   logo,
@@ -126,4 +131,8 @@ export {
   spring,
   cibc,
   mbs,
+  me,
+  wave,
+  arrow,
+  amazon
 };

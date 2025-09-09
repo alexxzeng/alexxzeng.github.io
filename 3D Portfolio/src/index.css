@@ -137,11 +137,11 @@
 }
 
 .glow-text {
-  text-shadow: 0 0 2px #915eff, 0 0 13px #6b21a8;
+  text-shadow: 0 0 2px #915eff, 0 0 13px #3e346e;
 }
 
 .glow-text-thin {
-  text-shadow: 0 0 2px #915eff, 0 0 5px #6b21a8;
+  text-shadow: 0 0 2px #915eff, 0 0 5px #3e346e;
 }
 
 .vertical-timeline::before {
@@ -151,6 +151,10 @@
 
 .vertical-timeline-element-icon {
   box-shadow: 0 0 0 4px #3f2c76, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.arrow {
+  width: 300px;
 }
 
 .box {
@@ -315,4 +319,8 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+.no-bento-style {
+  all: unset;
 }

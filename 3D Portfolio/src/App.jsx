@@ -1,38 +1,33 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Education, Experience, Hero, 
-  Navbar, Tech, Works, ParticleBackground, Coursework, MobilePopUp} from './components';
+  Navbar, Tech, Works, ParticleBackground, Bento, MobilePopUp, MobileHero} from './components';
 
 import Footer from "./components/Footer";
-import Certificates from "./components/Certificates";
+import { useMediaQuery } from "react-responsive";
+import "./index.css";
 
 const App = () => {
+  const isMobile = useMediaQuery({ maxWidth: 640 });
 
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary flex justify-center">
         <MobilePopUp />
         <div className="max-w-[1920px] w-full">
-          <div className="bg-hero-pattern bg-cover 
-          bg-no-repeat bg-center">
+          <div className="bg-center">
             <Navbar />
-            <Hero />
+            {isMobile ? <MobileHero /> : <Hero />}
           </div>
-          <div>
-            <ParticleBackground />
-            <About />
-          </div>
+          <ParticleBackground />
+          <Bento />
           <Tech />
-          <Experience />
-          <Education />
-          <Certificates />
           <Works />
-          <Coursework/>
           <Contact />
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default App

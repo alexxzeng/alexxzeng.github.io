@@ -55,6 +55,8 @@ import {
   spring,
   cibc,
   mbs,
+  amazon,
+  shopify,
 } from "../assets";
 
 export const navLinks = [
@@ -289,6 +291,41 @@ const experience = [
     ]
   }
 ];
+
+const work = [  
+  {
+    position: "Software Engineer",
+    company: "Shopify",
+    location: "Toronto, ON",
+    date: "Sep 2025 - Dec 2025",
+    team: "Payment Solutions",
+    icon: shopify,
+  },
+  {
+    position: "Software Engineer",
+    company: "Amazon",
+    location: "Vancouver, BC",
+    date: "May 2025 - Aug 2025",
+    team: "Payment Methods",
+    icon: amazon,
+  },
+  {
+    position: "Software Developer",
+    company: "CIBC",
+    location: "Toronto, ON",
+    date: "Sep 2024 - Apr 2025",
+    team: "Payment Solutions",
+    icon: cibc,
+  },
+  {
+    position: "Teaching Assistant",
+    company: "University of Toronto",
+    location: "Toronto, ON",
+    date: "Aug 2024 - Apr 2025",
+    team: "Payment Solutions",
+    icon: uoft,
+  }
+]
 
 const educations = [
   {
@@ -592,4 +629,4 @@ const certificates = [
   }
 ];
 
-export { services, languages, educations, coursework, certificates, frameworks, tools, experience, webDev, mobileApps, gameDev, machineLearning};
+export { services, languages, educations, coursework, certificates, frameworks, tools, experience, webDev, mobileApps, gameDev, machineLearning, work};

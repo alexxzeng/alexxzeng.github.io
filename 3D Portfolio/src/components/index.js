@@ -11,6 +11,8 @@ import ParticleBackground from './ParticleBackground';
 import Coursework from './Coursework';
 import Experience from './Experience';
 import MobilePopUp from './MobilePopUp';
+import MobileHero from './MobileHero';
+import Bento from './Bento';
 
 export {
   Hero,
@@ -18,6 +20,7 @@ export {
   About,
   Tech,
   Education,
+  Bento,
   Works,
   Feedbacks,
   Contact,
@@ -28,5 +31,6 @@ export {
   ParticleBackground,
   Coursework,
   Experience,
-  MobilePopUp
+  MobilePopUp,
+  MobileHero
 }

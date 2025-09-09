@@ -13,8 +13,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
   return (
     <Tilt>
       <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)} className='flex justify-center items-center'>
-        <div className='green-pink-gradient p-[1px] sm:w-fit rounded-2xl' >
-          <div className='relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 sm:px-10 px-5 rounded-2xl shadow-xl shadow-purple-800 flex
+        <div className=' p-[1px] sm:w-fit rounded-2xl' >
+          <div className=' border-[#3e346e] relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 sm:px-10 px-5 rounded-2xl shadow-[0_8px_8px_-3px] shadow-purple-900 flex
               flex-col items-center gap-2'>
               <div className='font-semibold text-base phone:text-lg mb-1 flex gap-2'>
                 {name}
@@ -58,7 +58,7 @@ const Works = () => {
 
       <motion.div variants={textVariant()} className="ml-[3vw]">
         <p className={styles.sectionSubText}>Some Awesome Things I Built</p>
-        <p className={styles.sectionHeadText}><span className="text-[#915eff] glow-text">$ cd</span> &nbsp;Notable Projects</p>
+        <p className={styles.sectionHeadText}>Notable Projects</p>
       </motion.div>
 
       <div className='w-full flex justify-center'>
@@ -76,29 +76,29 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="flex flex-col sm:flex-row text-base xs:text-lg sm:text-base gap-4 sm:gap-10 lg:gap-20 mt-16 text-secondary md:text-xl font-semibold items-center w-full justify-center">
-            <button className={`${selector === 0 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
+      <div className="flex flex-col sm:flex-row text-base xs:text-lg sm:text-base gap-4 sm:gap-10 lg:gap-20 mt-16 text-secondary md:text-sm font-semibold items-center w-full justify-center">
+            <button className={`${selector === 0 ? 'text-[#cdcdcd] bg-tertiary border-[#6a45ba] shadow-[0_2px_8px_2px] shadow-purple-900' : 'bg-tertiary border-tertiary'} flex flex-col 
+            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-[102%]  trasition`} 
               onClick={() => {setSelector(0)}}>
               <h1 className="hidden lg:block">Web Development</h1>
               <h1 className="block lg:hidden">Web Development</h1>
       
             </button>
-            <button className={`${selector === 1 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
+            <button className={`${selector === 1 ? 'text-[#cdcdcd] bg-tertiary border-[#6a45ba] shadow-[0_2px_8px_2px] shadow-purple-900' : 'bg-tertiary border-tertiary'} flex flex-col 
+            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-[102%]  trasition`} 
               onClick={() => {setSelector(1);}}>
               <h1 className="hidden sm:block">Mobile Apps</h1>
               <h1 className="block sm:hidden">Mobile Apps</h1>
         
             </button>
-            <button className={`${selector === 2 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
+            <button className={`${selector === 2 ? 'text-[#cdcdcd] bg-tertiary border-[#6a45ba] shadow-[0_2px_8px_2px] shadow-purple-900' : 'bg-tertiary border-tertiary'} flex flex-col 
+            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-[102%]  trasition`} 
               onClick={() => setSelector(2)}>
               <h1 className="hidden sm:block">Machine/Deep Learning</h1>
               <h1 className="block sm:hidden">Machine Learning</h1>
             </button>
-            <button className={`${selector === 3 ? 'text-[#cdcdcd] bg-[#1d1836] border-[#915eff] shadow-md shadow-purple-800' : 'bg-tertiary border-tertiary'} flex flex-col 
-            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-105 trasition`} 
+            <button className={`${selector === 3 ? 'text-[#cdcdcd] bg-tertiary border-[#6a45ba] shadow-[0_2px_8px_2px] shadow-purple-900' : 'bg-tertiary border-tertiary'} flex flex-col 
+            justify-center items-center group gap-[2px] w-fit rounded-xl p-1 px-2 sm:p-2 sm:px-4 border-[1px]  hover:text-[#cdcdcd] hover:scale-[102%]  trasition`} 
               onClick={() => setSelector(3)}>
               <h1 className="hidden sm:block">Game Development</h1>
               <h1 className="block sm:hidden">Game Development</h1>
