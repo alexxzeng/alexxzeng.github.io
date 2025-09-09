@@ -1,9 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Education, Experience, Hero, 
-  Navbar, Tech, Works, ParticleBackground, Coursework, MobilePopUp, MobileHero} from './components';
+  Navbar, Tech, Works, ParticleBackground, Bento, MobilePopUp, MobileHero} from './components';
 
 import Footer from "./components/Footer";
-import Certificates from "./components/Certificates";
 import { useMediaQuery } from "react-responsive";
 
 const App = () => {
@@ -19,7 +18,7 @@ const App = () => {
             {isMobile ? <MobileHero /> : <Hero />}
           </div>
           <ParticleBackground />
-          <About />
+          <Bento />
           <Tech />
           <Works />
           <Contact />

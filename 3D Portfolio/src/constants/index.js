@@ -56,6 +56,7 @@ import {
   cibc,
   mbs,
   amazon,
+  shopify,
 } from "../assets";
 
 export const navLinks = [
@@ -294,10 +295,18 @@ const experience = [
 const work = [  
   {
     position: "Software Engineer",
+    company: "Shopify",
+    location: "Toronto, ON",
+    date: "Sep 2025 - Dec 2025",
+    team: "Payment Solutions",
+    icon: shopify,
+  },
+  {
+    position: "Software Engineer",
     company: "Amazon",
     location: "Vancouver, BC",
-    date: "May 2025 - Present",
-    team: "Payment Solutions",
+    date: "May 2025 - Aug 2025",
+    team: "Payment Methods",
     icon: amazon,
   },
   {
@@ -315,15 +324,7 @@ const work = [
     date: "Aug 2024 - Apr 2025",
     team: "Payment Solutions",
     icon: uoft,
-  },
-  {
-    position: "Software Engineer Intern",
-    company: "Maple Bit Services",
-    location: "Ajax, ON",
-    date: "May 2023 - Aug 2023",
-    team: "Payment Solutions",
-    icon: mbs,
-  },
+  }
 ]
 
 const educations = [
