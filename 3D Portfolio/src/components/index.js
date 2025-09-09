@@ -11,8 +11,11 @@ import ParticleBackground from './ParticleBackground';
 import Coursework from './Coursework';
 import Experience from './Experience';
 import MobilePopUp from './MobilePopUp';
+<<<<<<< HEAD
 import MobileHero from './MobileHero';
 import Bento from './Bento';
+=======
+>>>>>>> origin/main
 
 export {
   Hero,
@@ -20,7 +23,10 @@ export {
   About,
   Tech,
   Education,
+<<<<<<< HEAD
   Bento,
+=======
+>>>>>>> origin/main
   Works,
   Feedbacks,
   Contact,
@@ -31,6 +37,10 @@ export {
   ParticleBackground,
   Coursework,
   Experience,
+<<<<<<< HEAD
   MobilePopUp,
   MobileHero
+=======
+  MobilePopUp
+>>>>>>> origin/main
 }

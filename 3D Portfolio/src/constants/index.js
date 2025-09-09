@@ -55,8 +55,11 @@ import {
   spring,
   cibc,
   mbs,
+<<<<<<< HEAD
   amazon,
   shopify,
+=======
+>>>>>>> origin/main
 } from "../assets";
 
 export const navLinks = [
@@ -292,6 +295,7 @@ const experience = [
   }
 ];
 
+<<<<<<< HEAD
 const work = [  
   {
     position: "Software Engineer",
@@ -327,6 +331,8 @@ const work = [
   }
 ]
 
+=======
+>>>>>>> origin/main
 const educations = [
   {
     title: "Honours Bachelor of Science",
@@ -629,4 +635,8 @@ const certificates = [
   }
 ];
 
+<<<<<<< HEAD
 export { services, languages, educations, coursework, certificates, frameworks, tools, experience, webDev, mobileApps, gameDev, machineLearning, work};
+=======
+export { services, languages, educations, coursework, certificates, frameworks, tools, experience, webDev, mobileApps, gameDev, machineLearning};
+>>>>>>> origin/main

@@ -24,9 +24,15 @@ const Navbar = () => {
         }}>
           <img src={myImage} alt="logo" className='w-[72px] h-[72px] object-contain rounded-[25px] mr-3'/>
           <p className='text-white text-[22px] font-bold cursor-pointer glow-text'>
+<<<<<<< HEAD
             <span className='text-[#44387d]'>&lt;</span>Alex<span className='text-[#44387d]'>&gt;&lt;</span>
             <span className='text-[16px] text-[#44387d]'>/</span>
             Zeng<span className='text-[#44387d]'>&gt;</span>
+=======
+            <span className='text-[#915eff]'>&lt;</span>Alex<span className='text-[#915eff]'>&gt;&lt;</span>
+            <span className='text-[16px] text-[#915eff]'>/</span>
+            Zeng<span className='text-[#915eff]'>&gt;</span>
+>>>>>>> origin/main
             </p>
         </Link>
         <ul className='list-none hidden hero:flex flex-row gap-10 items-center'>
@@ -40,7 +46,11 @@ const Navbar = () => {
             </li>
           ))}
           <li className='flex gap-4'>
+<<<<<<< HEAD
               <a href='https://github.com/alexxzeng' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
+=======
+              <a href='https://github.com/Alex-Zeng-UofT' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
+>>>>>>> origin/main
                 <FontAwesomeIcon icon={faSquareGithub} />
               </a>
               <a href='https://www.linkedin.com/in/alexxzeng/' className='text-secondary text-[30px] hover:text-white hover:scale-105' target='_blank'>
@@ -51,7 +61,11 @@ const Navbar = () => {
               </a>
           </li>
           <li>
+<<<<<<< HEAD
             <a href='https://drive.google.com/file/d/1gmBIEwNfSDV45ONZUSfdmj-zky0/view?usp=sharing'
+=======
+            <a href='https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45ONZUSfdmj-zky0/view?usp=sharing'
+>>>>>>> origin/main
               className='bg-secondary text-primary text-[19px] font-semibold p-2.5 rounded-lg pl-4 pr-4 
               hover:bg-tertiary hover:text-secondary transition duration-[200ms]'
               target='_blank'>
@@ -92,7 +106,11 @@ const Navbar = () => {
               <li className='flex justify-center w-full' onClick={() => {
                   setToggle(!toggle)
                 }}>
+<<<<<<< HEAD
                 <a href='https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45Ofdmj-zky0/view?usp=sharing'
+=======
+                <a href='https://drive.google.com/file/d/1gmBIEwNXNQw7fSDV45ONZUSfdmj-zky0/view?usp=sharing'
+>>>>>>> origin/main
                   className='bg-secondary text-primary text-[17px] font-semibold p-2 rounded-lg px-4 
                   hover:bg-primary hover:text-secondary '
                   target='_blank'>
