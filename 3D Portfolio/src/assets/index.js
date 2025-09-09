@@ -63,14 +63,11 @@ import music from "./music.jfif";
 
 import cibc from "./company/cibc.png";
 import mbs from "./company/mbs.png";
-<<<<<<< HEAD
 import amazon from "./company/amazon.jpg";
 
 import me from "./me.webm";
 import wave from "./wave.png"
 import arrow from "./arrow.png"
-=======
->>>>>>> origin/main
 
 export {
   logo,
@@ -134,11 +131,8 @@ export {
   spring,
   cibc,
   mbs,
-<<<<<<< HEAD
   me,
   wave,
   arrow,
   amazon
-=======
->>>>>>> origin/main
 };
