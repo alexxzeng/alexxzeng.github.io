@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
 import { BentoGrid } from "react-bento";
+import { Tilt } from 'react-tilt';
 
 const containterStyle = `!bg-tertiary rounded-lg w-full h-full flex items-center 
-                        justify-center p-4 shadow-[0_8px_8px_-3px] shadow-purple-900
-                        hover:!scale-[103%] transition`;
+                        justify-center p-4 shadow-[0_8px_8px_-3px] shadow-purple-900`;
 
 const bentoItems = [
   {
@@ -15,11 +15,14 @@ const bentoItems = [
     title: "Item 3",
     color: "bg-tertiary",
     element: (
-        <motion.div 
-            variants={fadeIn('right', 'spring', 0.5, 0.1)} 
-            className={containterStyle}>
-            placeholder
-        </motion.div>
+        <Tilt className='w-full h-full'
+            options={{max: 15, scale: 1.01, speed: 10}} >
+            <motion.div 
+                variants={fadeIn('right', 'spring', 0.5, 0.5)} 
+                className={containterStyle}>
+                placeholder
+            </motion.div>
+        </Tilt>
     ),
     width: 1,
     height: 2,
@@ -29,11 +32,14 @@ const bentoItems = [
     color: "bg-tertiary",
     title: "Item 4",
     element: (
-        <motion.div 
-            variants={fadeIn('right', 'spring', 0.8, 0.1)}
-            className={containterStyle}>
-            placeholder
-        </motion.div>
+        <Tilt className='w-full h-full'
+            options={{max: 15, scale: 1.01, speed: 10}} >
+            <motion.div 
+                variants={fadeIn('right', 'spring', 0.8, 0.5)}
+                className={containterStyle}>
+                placeholder
+            </motion.div>
+        </Tilt>
     ),
     width: 1,
     height: 1,
@@ -43,11 +49,14 @@ const bentoItems = [
     color: "bg-tertiary",
     title: "Item 4",
     element: (
-        <motion.div 
-            variants={fadeIn('right', 'spring', 1.2, 0.1)} 
-            className={containterStyle}>
-            placeholder
-        </motion.div>
+        <Tilt className='w-full h-full'
+            options={{max: 15, scale: 1.01, speed: 10}} >
+            <motion.div 
+                variants={fadeIn('right', 'spring', 1.2, 0.5)} 
+                className={containterStyle}>
+                placeholder
+            </motion.div>
+        </Tilt>
     ),
     width: 1,
     height: 1,
@@ -57,11 +66,14 @@ const bentoItems = [
     color: "bg-tertiary",
     title: "Item 4",
     element: (
-        <motion.div 
-            variants={fadeIn('left', 'spring', 1.9, 0.1)} 
-            className={containterStyle}>
-            placeholder
-        </motion.div>
+        <Tilt className='w-full h-full'
+            options={{max: 15, scale: 1.01, speed: 10}} >
+            <motion.div 
+                variants={fadeIn('left', 'spring', 1.9, 0.5)} 
+                className={containterStyle}>
+                placeholder
+            </motion.div>
+        </Tilt>
     ),
     width: 2,
     height: 3,
@@ -71,11 +83,14 @@ const bentoItems = [
     color: "bg-tertiary",
     title: "Item 4",
     element: (
-        <motion.div 
-            variants={fadeIn('right', 'spring', 1.4, 0.1)} 
-            className={containterStyle}>
-            placeholder
-        </motion.div>
+        <Tilt className='w-full h-full'
+            options={{max: 15, scale: 1.01, speed: 10}} >
+            <motion.div 
+                variants={fadeIn('right', 'spring', 1.4, 0.5)} 
+                className={containterStyle}>
+                placeholder
+            </motion.div>
+        </Tilt>
     ),
     width: 2,
     height: 1,
@@ -85,11 +100,15 @@ const bentoItems = [
     color: "bg-tertiary",
     title: "Item 4",
     element: (
-        <motion.div 
-            variants={fadeIn('up', 'spring', 1.7, 0.1)} 
-            className={containterStyle}>
-            placeholder
-        </motion.div>
+        <Tilt 
+            className='w-full h-full'
+            options={{max: 15, scale: 1.01, speed: 10}} >
+            <motion.div 
+                variants={fadeIn('up', 'spring', 1.7, 0.5)} 
+                className={containterStyle}>
+                placeholder
+            </motion.div>
+        </Tilt>
     ),
     width: 3,
     height: 1,
@@ -120,4 +139,4 @@ const Bento = () => {
   )
 }
 
-export default SectionWrapper(Bento, "bento")
+export default SectionWrapper(Bento, "about")
