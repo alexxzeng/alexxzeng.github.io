@@ -11,7 +11,8 @@ const categories = [ webDev, mobileApps, machineLearning, gameDev ]
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, supervision }) => {
   return (
-    <Tilt>
+    <Tilt
+      options={{max: 15, scale: 1.02, speed: 10}}>
       <motion.div variants={fadeIn("up", "Spring", index * 0.5, 0.75)} className='flex justify-center items-center'>
         <div className=' p-[1px] sm:w-fit rounded-2xl' >
           <div className=' border-[#3e346e] relative w-full max-w-[600px] h-fit bg-tertiary p-5 lg:px-5 sm:px-10 px-5 rounded-2xl shadow-[0_8px_8px_-3px] shadow-purple-900 flex

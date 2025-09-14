@@ -19,7 +19,12 @@ const App = () => {
             {isMobile ? <MobileHero /> : <Hero />}
           </div>
           <ParticleBackground />
-          <Bento />
+          <div className="xl:block hidden">
+            <Bento />
+          </div>
+          <div className="xl:hidden">
+            <About />
+          </div>
           <Tech />
           <Works />
           <Contact />
