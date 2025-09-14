@@ -72,6 +72,12 @@ import arrow from "./arrow.png"
 import toronto from "./toronto.png"
 import vancouver from "./vancouver.png"
 
+import kayak from "./kayak.png"
+import hike from "./hike.png"
+import bike from "./bike.png"
+import hat from "./hat.png"
+import lab from "./lab.png"
+
 export {
   logo,
   backend,
@@ -139,5 +145,10 @@ export {
   arrow,
   amazon,
   toronto,
-  vancouver
+  vancouver,
+  kayak,
+  hike,
+  bike,
+  hat,
+  lab
 };
