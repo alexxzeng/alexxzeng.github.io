@@ -69,6 +69,9 @@ import me from "./me.webm";
 import wave from "./wave.png"
 import arrow from "./arrow.png"
 
+import toronto from "./toronto.png"
+import vancouver from "./vancouver.png"
+
 export {
   logo,
   backend,
@@ -134,5 +137,7 @@ export {
   me,
   wave,
   arrow,
-  amazon
+  amazon,
+  toronto,
+  vancouver
 };

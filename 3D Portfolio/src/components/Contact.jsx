@@ -73,7 +73,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input type="text" name="name" value={form.name} required
-            onChange={handleChange} placeholder="Let's Start With Your Name"
+            onChange={handleChange} placeholder="Let's start with your name"
             className="bg-[#2d2742] py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outlined-none border-none font-medium"/>
           </label>
@@ -81,7 +81,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input type="text" name="email" value={form.email} required
-            onChange={handleChange} placeholder="And Now Your Email"
+            onChange={handleChange} placeholder="And now your email"
             className="bg-[#2d2742] py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outlined-none border-none font-medium"/>
           </label>
@@ -89,7 +89,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea rows='6' name="message" value={form.message} required
-            onChange={handleChange} placeholder="Finally, Your Epic Message To Be Delivered"
+            onChange={handleChange} placeholder="Finally, your epic message to be delivered"
             className="bg-[#2d2742] py-4 px-6 placeholder:text-secondary
             text-white rounded-lg outlined-none border-none font-medium"/>
           </label>
@@ -100,7 +100,7 @@ const Contact = () => {
             <button type='submit' className={`p-4 pl-6 pr-6 bg-secondary text-tertiary
             font-bold w-fit rounded-xl ${isSubmitted ? '' : 'hover:bg-tertiary hover:text-secondary'} shadow-md
             shadow-primary`} disabled={isSubmitted}>
-              {loading ? 'Working On It!' : 'Send It To Me!'}
+              {loading ? 'Working on it!' : 'Send it to me!'}
             </button>
           </div>
           
