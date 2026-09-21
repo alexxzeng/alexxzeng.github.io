@@ -5,10 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon-D4GB_yWl.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex | Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-eFtwu-0o.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CpJ9TNM3.css">
+    <style>
+      html, body { margin: 0; background: #050505; }
+      #splash { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center;
+                justify-content: center; gap: 20px; background: #050505; font-family: system-ui, sans-serif; }
+      #splash p { margin: 0; color: #fff; font-size: 28px; font-weight: 700; letter-spacing: 0.02em; }
+      #splash .track { width: 256px; height: 3px; border-radius: 9999px; background: rgba(255,255,255,0.1); overflow: hidden; }
+      #splash .bar { width: 40%; height: 100%; border-radius: 9999px; background: #cfd6ff; animation: splash-slide 1.2s ease-in-out infinite; }
+      @keyframes splash-slide { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+    </style>
+    <script type="module" crossorigin src="/assets/index-DrSZKj2A.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-XSO6d1_F.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- shown instantly while the JS bundle downloads; React replaces it on mount -->
+      <div id="splash"><p>Alex Zeng</p><div class="track"><div class="bar"></div></div></div>
+    </div>
   </body>
 </html>
